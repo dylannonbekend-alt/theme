@@ -260,9 +260,9 @@
 }
 
 .diqa-waterfall__topic-tab {
-  border: 1px solid rgba(164, 136, 92, 0.25);
-  background: rgba(255, 252, 246, 0.8);
-  color: #6e5b42;
+  border: 1px solid rgba(164, 136, 92, 0.28);
+  background: rgba(255, 252, 246, 0.86);
+  color: #5f4c33;
   border-radius: 999px;
   padding: 0.22rem 0.62rem;
   font-size: 0.72rem;
@@ -273,8 +273,19 @@
 }
 
 .diqa-waterfall__topic-tab.is-active {
-  color: #342a21;
+  color: #2f261d;
   border-color: rgba(164, 136, 92, 0.5);
+}
+
+.diqa-waterfall__topic-tab:hover {
+  border-color: rgba(164, 136, 92, 0.55);
+  background: rgba(255, 252, 246, 0.96);
+}
+
+.diqa-waterfall__topic-hint {
+  margin: 0.45rem 0 0;
+  color: #8a7b67;
+  font-size: 0.74rem;
 }
 
 .diqa-waterfall__topic-content {
