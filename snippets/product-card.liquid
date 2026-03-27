@@ -107,6 +107,12 @@
       {% if block_settings.padding-block-end > 0 %}--zoom-out-padding-block-end: min(var(--padding-xs), {{ block_settings.padding-block-end | times: 0.7}}px);{% endif %}
     "
   >
+    {% unless onboarding %}
+      {% assign diqa_category = render 'diqa-product-category', product: product | strip %}
+      {% if diqa_category != blank %}
+        <span class="diqa-product-category-badge">{{ diqa_category }}</span>
+      {% endif %}
+    {% endunless %}
     {{ children }}
   </div>
 </product-card>

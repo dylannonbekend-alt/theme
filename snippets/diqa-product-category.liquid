@@ -1,0 +1,15 @@
+{%- liquid
+  assign category = ''
+  assign product_type_downcase = product.type | downcase
+  assign product_title_downcase = product.title | downcase
+
+  if product_type_downcase contains 'abaya' or product_title_downcase contains 'abaya'
+    assign category = "Abaya's"
+  elsif product_type_downcase contains 'hijab' or product_title_downcase contains 'hijab'
+    assign category = 'Hijabs'
+  else
+    assign category = product.type
+  endif
+-%}
+
+{{- category -}}

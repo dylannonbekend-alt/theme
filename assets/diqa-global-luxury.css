@@ -281,3 +281,24 @@ main[data-template*='index'] .ui-test-product-list .product-card__content [class
   color: #8b6c3f;
   font-weight: 600;
 }
+
+.diqa-product-category-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid rgba(164, 136, 92, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 251, 243, 0.9);
+  color: #6a5639;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.diqa-product-category-inline {
+  margin: 0;
+  color: #6a5639;
+  font-size: 0.85rem;
+}
