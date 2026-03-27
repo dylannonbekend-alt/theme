@@ -169,6 +169,7 @@
   min-height: 30rem;
   perspective: 1300px;
   transform-style: preserve-3d;
+  pointer-events: none;
 }
 
 .diqa-waterfall__stage {
@@ -225,10 +226,12 @@
 }
 
 .diqa-waterfall__panel {
-  position: relative;
-  z-index: 2;
-  width: min(72%, 24rem);
-  margin: 2rem 0 0 2rem;
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(78%, 28rem);
   border: 1px solid rgba(164, 136, 92, 0.28);
   background: linear-gradient(155deg, rgba(255, 253, 248, 0.8), rgba(247, 238, 224, 0.64));
   backdrop-filter: blur(8px);
@@ -269,7 +272,7 @@
   cursor: pointer;
   text-decoration: none;
   position: relative;
-  z-index: 3;
+  z-index: 7;
 }
 
 .diqa-waterfall__topic-tab.is-active {
@@ -315,7 +318,7 @@
   text-decoration: underline;
   text-underline-offset: 2px;
   position: relative;
-  z-index: 3;
+  z-index: 7;
   cursor: pointer;
 }
 
@@ -393,8 +396,10 @@
   }
 
   .diqa-waterfall__panel {
-    width: calc(100% - 3rem);
-    margin: 1.2rem 1.5rem 0;
+    width: calc(100% - 2.2rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .diqa-waterfall__card {
