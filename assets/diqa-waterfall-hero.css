@@ -250,6 +250,56 @@
   line-height: 1.5;
 }
 
+.diqa-waterfall__topic-tabs {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.diqa-waterfall__topic-tab {
+  border: 1px solid rgba(164, 136, 92, 0.25);
+  background: rgba(255, 252, 246, 0.8);
+  color: #6e5b42;
+  border-radius: 999px;
+  padding: 0.22rem 0.62rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.diqa-waterfall__topic-tab.is-active {
+  color: #342a21;
+  border-color: rgba(164, 136, 92, 0.5);
+}
+
+.diqa-waterfall__topic-content {
+  margin-top: 0.65rem;
+}
+
+.diqa-waterfall__topic-title {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a6a3c;
+}
+
+.diqa-waterfall__topic-copy {
+  margin: 0.35rem 0 0;
+  color: #4f4337;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.diqa-waterfall__topic-link {
+  display: inline-block;
+  margin-top: 0.45rem;
+  color: #6e5737;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .diqa-waterfall__panel-line {
   margin-top: 1rem;
   display: block;
