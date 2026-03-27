@@ -244,3 +244,40 @@ main[data-template*='collection'] .card img,
 main[data-template*='collection'] .media img {
   background: #f7f1e7;
 }
+
+/* Homepage product grid polish */
+main[data-template*='index'] .ui-test-product-list .resource-list--grid {
+  --resource-list-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+main[data-template*='index'] .ui-test-product-list .resource-list__item {
+  max-width: 360px;
+}
+
+main[data-template*='index'] .ui-test-product-list .product-card__content {
+  border: 1px solid rgba(164, 136, 92, 0.2);
+  border-radius: 0.6rem;
+  background: linear-gradient(165deg, #fffdf8, #f4ecde);
+  padding: 0.45rem;
+}
+
+main[data-template*='index'] .ui-test-product-list .product-card__content .media,
+main[data-template*='index'] .ui-test-product-list .product-card__content img {
+  border-radius: 0.45rem;
+}
+
+main[data-template*='index'] .ui-test-product-list .product-card__content img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+main[data-template*='index'] .ui-test-product-list .product-card__content [class*='product-title'] {
+  font-size: 1.02rem;
+  color: #2f261d;
+  margin-top: 0.35rem;
+}
+
+main[data-template*='index'] .ui-test-product-list .product-card__content [class*='price'] {
+  color: #8b6c3f;
+  font-weight: 600;
+}
