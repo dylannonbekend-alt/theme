@@ -26,7 +26,7 @@
     var titleEl = bar.querySelector('[data-diqa-sticky-title]');
     var priceEl = bar.querySelector('[data-diqa-sticky-price]');
 
-    if (titleEl) titleEl.textContent = readText('h1', 'DIQA Product');
+    if (titleEl) titleEl.textContent = readText('h1', 'MarOumayra Product');
     if (priceEl) priceEl.textContent = readText('[class*="price"]', '');
 
     stickyButton.addEventListener('click', function () {

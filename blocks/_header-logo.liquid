@@ -47,11 +47,11 @@
     data-testid="header-logo"
   >
     <img
-      src="{{ 'diqa-logo-header.png' | asset_url }}"
+      src="{{ 'maroumayra-logo-transparent.png' | asset_url }}"
       alt="{{ alt_text_fallback }}"
       class="header-logo__image"
-      width="490"
-      height="490"
+      width="696"
+      height="252"
       loading="eager"
     >
   </span>
@@ -97,12 +97,13 @@
 
   .header-logo__image {
     object-fit: contain;
-    height: 48px;
-    width: 48px;
+    height: 34px;
+    width: auto;
+    max-width: min(76vw, 210px);
 
     @media screen and (min-width: 750px) {
-      height: 60px;
-      width: 60px;
+      height: 42px;
+      max-width: 300px;
     }
   }
 

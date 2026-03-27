@@ -11,9 +11,9 @@
     "diqa_page_hero_about_a21f": {
       "type": "diqa-page-hero",
       "settings": {
-        "kicker": "About DIQA",
+        "kicker": "About MarOumayra",
         "title": "Modern modest luxury for Abayas and Hijabs",
-        "copy": "DIQA creates premium pieces with elegant drape, refined finishing and a calm timeless identity."
+        "copy": "MarOumayra creates premium pieces with elegant drape, refined finishing and a calm timeless identity."
       }
     },
     "main": {
@@ -22,7 +22,7 @@
         "page-content": {
           "type": "text",
           "settings": {
-            "text": "<p>DIQA staat voor moderne bescheiden luxe. Wij ontwerpen Abaya's en Hijabs met focus op premium stof, rustige lijnen en sterke details.</p><p>Ons doel is tijdloze items te maken die elegant aanvoelen en moeiteloos gedragen worden in het dagelijks leven.</p>",
+            "text": "<p>MarOumayra staat voor moderne bescheiden luxe. Wij ontwerpen Abaya's en Hijabs met focus op premium stof, rustige lijnen en sterke details.</p><p>Ons doel is tijdloze items te maken die elegant aanvoelen en moeiteloos gedragen worden in het dagelijks leven.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -77,7 +77,7 @@
           "type": "point",
           "settings": {
             "title": "Timeless direction",
-            "text": "DIQA designs are created to stay relevant beyond short-lived trends."
+            "text": "MarOumayra designs are created to stay relevant beyond short-lived trends."
           }
         }
       },
@@ -87,9 +87,9 @@
         "point_3"
       ],
       "settings": {
-        "kicker": "About DIQA",
+        "kicker": "About MarOumayra",
         "heading": "Quiet luxury with character",
-        "copy": "DIQA was built around timeless design, restrained detail, and premium quality you can feel."
+        "copy": "MarOumayra was built around timeless design, restrained detail, and premium quality you can feel."
       }
     },
     "diqa_testimonials_about_jx93eR": {
