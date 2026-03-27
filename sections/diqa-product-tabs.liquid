@@ -1,0 +1,91 @@
+{{ 'diqa-product-tabs.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'diqa-product-tabs.js' | asset_url }}" defer></script>
+
+<section class="diqa-product-tabs" data-diqa-product-tabs>
+  <div class="page-width">
+    <div class="diqa-product-tabs__wrap">
+      <div class="diqa-product-tabs__nav" role="tablist" aria-label="Productinformatie tabs">
+        <button type="button" class="diqa-product-tabs__tab" data-diqa-tab="description" role="tab" aria-selected="true">
+          {{ section.settings.tab_description_label }}
+        </button>
+        <button type="button" class="diqa-product-tabs__tab" data-diqa-tab="fabric" role="tab" aria-selected="false">
+          {{ section.settings.tab_fabric_label }}
+        </button>
+        <button type="button" class="diqa-product-tabs__tab" data-diqa-tab="sizing" role="tab" aria-selected="false">
+          {{ section.settings.tab_sizing_label }}
+        </button>
+        <button type="button" class="diqa-product-tabs__tab" data-diqa-tab="shipping" role="tab" aria-selected="false">
+          {{ section.settings.tab_shipping_label }}
+        </button>
+      </div>
+
+      <div class="diqa-product-tabs__panel is-active" data-diqa-panel="description" role="tabpanel">
+        <p class="diqa-product-tabs__content">{{ section.settings.description_text }}</p>
+      </div>
+
+      <div class="diqa-product-tabs__panel" data-diqa-panel="fabric" role="tabpanel" hidden>
+        <ul class="diqa-product-tabs__list">
+          <li><strong>Materiaal:</strong> {{ section.settings.fabric_material }}</li>
+          <li><strong>Techniek:</strong> {{ section.settings.fabric_technic }}</li>
+          <li><strong>Patroon:</strong> {{ section.settings.fabric_pattern }}</li>
+          <li><strong>Eigenschappen:</strong> {{ section.settings.fabric_features }}</li>
+        </ul>
+      </div>
+
+      <div class="diqa-product-tabs__panel" data-diqa-panel="sizing" role="tabpanel" hidden>
+        <ul class="diqa-product-tabs__list">
+          <li><strong>Type:</strong> {{ section.settings.size_type }}</li>
+          <li><strong>Lengte:</strong> {{ section.settings.size_length }}</li>
+          <li><strong>Pasvorm:</strong> {{ section.settings.size_fit }}</li>
+          <li><strong>Mouw:</strong> {{ section.settings.size_sleeve }}</li>
+          <li><strong>Hals:</strong> {{ section.settings.size_neckline }}</li>
+          <li><strong>Seizoen:</strong> {{ section.settings.size_season }}</li>
+        </ul>
+      </div>
+
+      <div class="diqa-product-tabs__panel" data-diqa-panel="shipping" role="tabpanel" hidden>
+        <ul class="diqa-product-tabs__list">
+          <li>{{ section.settings.shipping_line_one }}</li>
+          <li>{{ section.settings.shipping_line_two }}</li>
+          <li>{{ section.settings.shipping_line_three }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Product Tabs",
+  "settings": [
+    { "type": "text", "id": "tab_description_label", "label": "Tab 1 label", "default": "Beschrijving" },
+    { "type": "text", "id": "tab_fabric_label", "label": "Tab 2 label", "default": "Stof" },
+    { "type": "text", "id": "tab_sizing_label", "label": "Tab 3 label", "default": "Maatvoering" },
+    { "type": "text", "id": "tab_shipping_label", "label": "Tab 4 label", "default": "Verzending en retour" },
+
+    {
+      "type": "textarea",
+      "id": "description_text",
+      "label": "Beschrijving tekst",
+      "default": "Elegante abaya met verzorgde afwerking en comfortabele pasvorm. Geschikt voor dagelijks gebruik en speciale gelegenheden."
+    },
+
+    { "type": "text", "id": "fabric_material", "label": "Materiaal", "default": "Premium satijn" },
+    { "type": "text", "id": "fabric_technic", "label": "Techniek", "default": "Borduurwerk" },
+    { "type": "text", "id": "fabric_pattern", "label": "Patroon", "default": "Effen" },
+    { "type": "text", "id": "fabric_features", "label": "Eigenschappen", "default": "Ademend, anti-krimp, lichtgewicht, sneldrogend" },
+
+    { "type": "text", "id": "size_type", "label": "Type", "default": "Abaya" },
+    { "type": "text", "id": "size_length", "label": "Lengte", "default": "Maxi" },
+    { "type": "text", "id": "size_fit", "label": "Pasvorm", "default": "Regular" },
+    { "type": "text", "id": "size_sleeve", "label": "Mouw", "default": "Lange mouw" },
+    { "type": "text", "id": "size_neckline", "label": "Hals", "default": "Ronde hals" },
+    { "type": "text", "id": "size_season", "label": "Seizoen", "default": "Lente, zomer, herfst" },
+
+    { "type": "text", "id": "shipping_line_one", "label": "Regel 1", "default": "Verzending binnen 1-2 werkdagen." },
+    { "type": "text", "id": "shipping_line_two", "label": "Regel 2", "default": "Retourneren binnen 14 dagen." },
+    { "type": "text", "id": "shipping_line_three", "label": "Regel 3", "default": "Ruilen mogelijk op basis van beschikbaarheid." }
+  ],
+  "presets": [{ "name": "DIQA Product Tabs" }]
+}
+{% endschema %}

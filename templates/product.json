@@ -280,16 +280,26 @@
       }
     },
     "diqa_product_editorial_copy_u82d": {
-      "type": "diqa-product-story",
+      "type": "diqa-product-tabs",
       "settings": {
-        "kicker": "Productinformatie",
-        "intro": "Een sterke basis voor een moderne, bescheiden garderobe. Gemaakt van kwaliteitsstof met een comfortabele pasvorm en nette valling.",
-        "point_one_title": "Waarom dit product",
-        "point_one_text": "Goede stofkwaliteit, ademend comfort en een verzorgde afwerking.",
-        "point_two_title": "Pasvorm en draaggevoel",
-        "point_two_text": "Gebalanceerd silhouet dat prettig draagt en er de hele dag netjes uitziet.",
-        "point_three_title": "Onderhoud",
-        "point_three_text": "Behandel met zorg om kwaliteit en afwerking te behouden. Bekijk de pagina Stofverzorging voor volledige instructies."
+        "tab_description_label": "Beschrijving",
+        "tab_fabric_label": "Stof",
+        "tab_sizing_label": "Maatvoering",
+        "tab_shipping_label": "Verzending en retour",
+        "description_text": "Elegante abaya met verfijnde afwerking en comfortabele pasvorm. Gemaakt van hoogwaardig materiaal dat soepel valt en de hele dag aangenaam draagt. Geschikt voor dagelijks gebruik en speciale gelegenheden.",
+        "fabric_material": "Premium satijn",
+        "fabric_technic": "Borduurwerk",
+        "fabric_pattern": "Effen",
+        "fabric_features": "Ademend, anti-krimp, lichtgewicht, sneldrogend",
+        "size_type": "Abaya",
+        "size_length": "Maxi",
+        "size_fit": "Regular",
+        "size_sleeve": "Lange mouw",
+        "size_neckline": "Ronde hals",
+        "size_season": "Lente, zomer, herfst",
+        "shipping_line_one": "Verzending binnen 1-2 werkdagen.",
+        "shipping_line_two": "Retourneren binnen 14 dagen.",
+        "shipping_line_three": "Ruilen mogelijk op basis van beschikbaarheid."
       }
     },
     "product_recommendations_qggXJq": {

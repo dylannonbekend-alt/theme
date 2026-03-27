@@ -1,0 +1,60 @@
+.diqa-product-tabs {
+  padding: 2.2rem 0 0.6rem;
+}
+
+.diqa-product-tabs__wrap {
+  border: 1px solid rgba(164, 136, 92, 0.2);
+  border-radius: 0.6rem;
+  background: linear-gradient(165deg, #fffdf9, #f4ecde);
+  padding: 1rem;
+}
+
+.diqa-product-tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  border-bottom: 1px solid rgba(164, 136, 92, 0.2);
+  padding-bottom: 0.7rem;
+}
+
+.diqa-product-tabs__tab {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #766a5c;
+  border-radius: 999px;
+  min-height: 2.15rem;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.diqa-product-tabs__tab.is-active {
+  color: #2f261d;
+  border-color: rgba(164, 136, 92, 0.3);
+  background: rgba(255, 251, 243, 0.9);
+}
+
+.diqa-product-tabs__panel {
+  display: none;
+  padding-top: 0.95rem;
+}
+
+.diqa-product-tabs__panel.is-active {
+  display: block;
+}
+
+.diqa-product-tabs__content {
+  margin: 0;
+  color: #4f4539;
+  line-height: 1.6;
+}
+
+.diqa-product-tabs__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #4f4539;
+}
+
+.diqa-product-tabs__list li + li {
+  margin-top: 0.3rem;
+}
