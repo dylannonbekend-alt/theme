@@ -10,7 +10,7 @@
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <aside
-  class="announcement-bar spacing-style section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
+  class="announcement-bar {% if section.blocks.size == 1 %}announcement-bar--motion{% endif %} spacing-style section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
   style="{% render 'spacing-padding', settings: section.settings %}; --border-bottom-width: {{ section.settings.divider_width }}px;"
 >
   {% liquid
@@ -115,6 +115,28 @@
 
   .announcement-bar__text:first-child {
     margin: 0;
+  }
+
+  .announcement-bar--motion .announcement-bar__text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: announcementTextDrift 9s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+
+  @keyframes announcementTextDrift {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-18%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .announcement-bar--motion .announcement-bar__text {
+      animation: none;
+    }
   }
 
   .announcement-bar__link {
