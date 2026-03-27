@@ -1,4 +1,37 @@
 (function () {
+  function setupTopicPreview(section) {
+    var tabs = Array.prototype.slice.call(section.querySelectorAll('.diqa-waterfall__topic-tab'));
+    if (!tabs.length) return;
+
+    var titleEl = section.querySelector('[data-waterfall-topic-title]');
+    var textEl = section.querySelector('[data-waterfall-topic-text]');
+    var linkEl = section.querySelector('[data-waterfall-topic-link]');
+    if (!titleEl || !textEl || !linkEl) return;
+
+    function activate(tab) {
+      tabs.forEach(function (t) {
+        t.classList.toggle('is-active', t === tab);
+      });
+
+      var nextTitle = tab.getAttribute('data-topic-title') || '';
+      var nextText = tab.getAttribute('data-topic-text') || '';
+      var nextLink = tab.getAttribute('data-topic-link') || '/collections/all';
+
+      titleEl.textContent = nextTitle;
+      textEl.textContent = nextText;
+      linkEl.setAttribute('href', nextLink);
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('mouseenter', function () {
+        activate(tab);
+      });
+      tab.addEventListener('focus', function () {
+        activate(tab);
+      });
+    });
+  }
+
   function setupTilt(section) {
     var stageWrap = section.querySelector('[data-waterfall-tilt]');
     if (!stageWrap) return;
@@ -128,6 +161,7 @@
     document.querySelectorAll('[data-diqa-waterfall]').forEach(function (section) {
       setupTilt(section);
       setupWaterfall(section);
+      setupTopicPreview(section);
     });
   }
 

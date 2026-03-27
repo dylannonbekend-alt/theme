@@ -40,6 +40,22 @@
   pointer-events: none;
 }
 
+.diqa-waterfall__brandmark {
+  position: absolute;
+  right: clamp(1rem, 5vw, 5rem);
+  bottom: clamp(1rem, 4vw, 3rem);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.18;
+  filter: saturate(0.85) contrast(0.95);
+}
+
+.diqa-waterfall__brandmark img {
+  width: clamp(150px, 26vw, 340px);
+  height: auto;
+  display: block;
+}
+
 .diqa-waterfall__veil {
   background:
     radial-gradient(circle at 16% 18%, rgba(167, 131, 78, 0.18), transparent 44%),
@@ -278,6 +294,7 @@
 .diqa-waterfall__topic-tab.is-active {
   color: #2f261d;
   border-color: rgba(164, 136, 92, 0.5);
+  background: rgba(255, 252, 246, 1);
 }
 
 .diqa-waterfall__topic-tab:hover {
@@ -384,6 +401,13 @@
   .diqa-waterfall__inner {
     grid-template-columns: 1fr;
     gap: 1.4rem;
+  }
+
+  .diqa-waterfall__brandmark {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0.8rem;
+    opacity: 0.14;
   }
 
   .diqa-waterfall__stage-wrap {

@@ -13,6 +13,19 @@
 >
   <canvas class="diqa-waterfall__canvas" aria-hidden="true"></canvas>
   <div class="diqa-waterfall__veil" aria-hidden="true"></div>
+  {% if settings.logo != blank %}
+    <div class="diqa-waterfall__brandmark" aria-hidden="true">
+      {{
+        settings.logo
+        | image_url: width: 700
+        | image_tag:
+          loading: 'lazy',
+          widths: '240,360,500,700',
+          sizes: '(max-width: 989px) 220px, 420px',
+          alt: shop.name
+      }}
+    </div>
+  {% endif %}
 
   <div class="diqa-waterfall__inner page-width">
     <div class="diqa-waterfall__left">
@@ -58,18 +71,27 @@
             <a
               class="diqa-waterfall__topic-tab is-active"
               href="{{ section.settings.topic_one_link | default: routes.collections_url }}"
+              data-topic-title="{{ section.settings.topic_one_label }}"
+              data-topic-text="{{ section.settings.topic_one_text }}"
+              data-topic-link="{{ section.settings.topic_one_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_one_label }}
             </a>
             <a
               class="diqa-waterfall__topic-tab"
               href="{{ section.settings.topic_two_link | default: routes.collections_url }}"
+              data-topic-title="{{ section.settings.topic_two_label }}"
+              data-topic-text="{{ section.settings.topic_two_text }}"
+              data-topic-link="{{ section.settings.topic_two_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_two_label }}
             </a>
             <a
               class="diqa-waterfall__topic-tab"
               href="{{ section.settings.topic_three_link | default: routes.collections_url }}"
+              data-topic-title="{{ section.settings.topic_three_label }}"
+              data-topic-text="{{ section.settings.topic_three_text }}"
+              data-topic-link="{{ section.settings.topic_three_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_three_label }}
             </a>
@@ -77,10 +99,11 @@
           <p class="diqa-waterfall__topic-hint">{{ section.settings.topic_hint }}</p>
 
           <div class="diqa-waterfall__topic-content">
-            <p class="diqa-waterfall__topic-title">{{ section.settings.topic_one_label }}</p>
-            <p class="diqa-waterfall__topic-copy">{{ section.settings.topic_one_text }}</p>
+            <p class="diqa-waterfall__topic-title" data-waterfall-topic-title>{{ section.settings.topic_one_label }}</p>
+            <p class="diqa-waterfall__topic-copy" data-waterfall-topic-text>{{ section.settings.topic_one_text }}</p>
             <a
               class="diqa-waterfall__topic-link"
+              data-waterfall-topic-link
               href="{{ section.settings.topic_one_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_cta_label }}

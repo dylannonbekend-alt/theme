@@ -64,6 +64,13 @@ main .rte h6 {
   letter-spacing: 0.01em;
 }
 
+#header-group .header-logo img {
+  max-height: 44px;
+  width: auto;
+  object-fit: contain;
+  filter: saturate(0.92) contrast(1.02);
+}
+
 footer {
   border-top: 1px solid rgba(164, 136, 92, 0.2);
   background: linear-gradient(180deg, #f8f4ec, #f0e9dd);
