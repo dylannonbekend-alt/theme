@@ -52,13 +52,9 @@
       if (titleEl) titleEl.textContent = tab.getAttribute('data-topic-title') || '';
       if (textEl) textEl.textContent = tab.getAttribute('data-topic-text') || '';
       if (linkEl) {
-        var href = tab.getAttribute('data-topic-link') || '';
-        if (href) {
-          linkEl.hidden = false;
-          linkEl.setAttribute('href', href);
-        } else {
-          linkEl.hidden = true;
-        }
+        var href = tab.getAttribute('data-topic-link') || '/collections/all';
+        linkEl.hidden = false;
+        linkEl.setAttribute('href', href);
       }
     }
 

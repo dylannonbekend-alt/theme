@@ -195,6 +195,7 @@
   filter: blur(0.2px);
   will-change: transform;
   animation: diqaOrbFloat 8s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .diqa-waterfall__orb--one {
@@ -234,6 +235,7 @@
   border-radius: 0.8rem;
   padding: 1.1rem 1.2rem;
   transform-style: preserve-3d;
+  pointer-events: auto;
 }
 
 .diqa-waterfall__panel-kicker {
@@ -265,6 +267,8 @@
   padding: 0.22rem 0.62rem;
   font-size: 0.72rem;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 
 .diqa-waterfall__topic-tab.is-active {
@@ -298,6 +302,25 @@
   font-size: 0.82rem;
   text-decoration: underline;
   text-underline-offset: 2px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.diqa-waterfall__topic-meta {
+  margin-top: 0.55rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.diqa-waterfall__topic-meta span {
+  border: 1px solid rgba(164, 136, 92, 0.24);
+  background: rgba(255, 252, 246, 0.72);
+  border-radius: 999px;
+  padding: 0.15rem 0.45rem;
+  color: #6b5941;
+  font-size: 0.7rem;
 }
 
 .diqa-waterfall__panel-line {
