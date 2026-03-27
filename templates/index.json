@@ -356,6 +356,10 @@
           ]
         }
       },
+      "block_order": [
+        "static-header",
+        "static-product-card"
+      ],
       "name": "Featured collection",
       "settings": {
         "collection": "all",
