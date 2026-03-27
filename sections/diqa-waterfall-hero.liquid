@@ -40,7 +40,7 @@
   <div class="diqa-waterfall__inner page-width">
     <div class="diqa-waterfall__left">
       <div class="diqa-waterfall__content">
-        <p class="diqa-waterfall__kicker">{{ section.settings.kicker | default: 'MarOumayra Collectie' }}</p>
+        <p class="diqa-waterfall__kicker">{{ section.settings.kicker | default: 'MAROUMAYRA Collectie' }}</p>
         <h1 class="diqa-waterfall__title">{{ section.settings.title | default: 'Stijl in beweging, rust in uitstraling.' }}</h1>
         <p class="diqa-waterfall__copy">{{ section.settings.copy | default: 'Een heldere visuele stijl met warme tinten en een moderne, verzorgde uitstraling.' }}</p>
         <div class="diqa-waterfall__actions">
@@ -53,7 +53,7 @@
 
           {% if secondary_href != blank and secondary_href != primary_href %}
             <a class="button button-secondary" href="{{ secondary_href }}">
-              {{ section.settings.secondary_label | default: 'Over MarOumayra' }}
+              {{ section.settings.secondary_label | default: 'Over MAROUMAYRA' }}
             </a>
           {% endif %}
         </div>
@@ -128,9 +128,9 @@
 
 {% schema %}
 {
-  "name": "MarOumayra Waterfall Hero",
+  "name": "MAROUMAYRA Waterfall Hero",
   "settings": [
-    { "type": "text", "id": "kicker", "label": "Kicker", "default": "MarOumayra Collectie" },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "MAROUMAYRA Collectie" },
     { "type": "text", "id": "title", "label": "Title", "default": "Stijl in beweging, rust in uitstraling." },
     {
       "type": "textarea",
@@ -140,9 +140,9 @@
     },
     { "type": "text", "id": "primary_label", "label": "Primary label", "default": "Bekijk collectie" },
     { "type": "url", "id": "primary_link", "label": "Primary link" },
-    { "type": "text", "id": "secondary_label", "label": "Secondary label", "default": "Over MarOumayra" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary label", "default": "Over MAROUMAYRA" },
     { "type": "url", "id": "secondary_link", "label": "Secondary link" },
-    { "type": "text", "id": "panel_kicker", "label": "Panel kicker", "default": "MarOumayra Signature" },
+    { "type": "text", "id": "panel_kicker", "label": "Panel kicker", "default": "MAROUMAYRA Signature" },
     { "type": "textarea", "id": "panel_text", "label": "Panel text", "default": "Kwaliteitsstoffen, warme zandtinten en tijdloze bescheiden silhouetten." },
     { "type": "text", "id": "topic_one_label", "label": "Tab 1 label", "default": "Abaya's" },
     { "type": "textarea", "id": "topic_one_text", "label": "Tab 1 tekst", "default": "Onze abaya's hebben een verzorgde pasvorm, rustige lijnen en zijn geschikt voor dagelijks gebruik." },
@@ -163,6 +163,6 @@
     { "type": "color", "id": "accent", "label": "Accent", "default": "#a7834e" },
     { "type": "color", "id": "text_color", "label": "Text color", "default": "#2b241d" }
   ],
-  "presets": [{ "name": "MarOumayra Waterfall Hero" }]
+  "presets": [{ "name": "MAROUMAYRA Waterfall Hero" }]
 }
 {% endschema %}
