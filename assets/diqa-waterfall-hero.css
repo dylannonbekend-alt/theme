@@ -115,6 +115,39 @@
   color: #2f261d !important;
 }
 
+.diqa-waterfall__quick-products {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  max-width: 32rem;
+}
+
+.diqa-waterfall__quick-product {
+  display: grid;
+  gap: 0.2rem;
+  text-decoration: none;
+  border: 1px solid rgba(164, 136, 92, 0.24);
+  background: rgba(255, 252, 246, 0.78);
+  border-radius: 0.4rem;
+  padding: 0.55rem 0.7rem;
+}
+
+.diqa-waterfall__quick-title {
+  color: #352d24;
+  font-size: 0.86rem;
+  line-height: 1.25;
+}
+
+.diqa-waterfall__quick-price {
+  color: #8a6839;
+  font-size: 0.82rem;
+}
+
+.diqa-waterfall__quick-product:hover {
+  border-color: rgba(164, 136, 92, 0.42);
+}
+
 .diqa-waterfall__micro {
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +316,11 @@
 
   .diqa-waterfall__stage-wrap {
     min-height: 23rem;
+  }
+
+  .diqa-waterfall__quick-products {
+    grid-template-columns: 1fr;
+    max-width: none;
   }
 
   .diqa-waterfall__panel {
