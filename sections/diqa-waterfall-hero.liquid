@@ -15,30 +15,54 @@
   <div class="diqa-waterfall__veil" aria-hidden="true"></div>
 
   <div class="diqa-waterfall__inner page-width">
-    <div class="diqa-waterfall__content">
-      <p class="diqa-waterfall__kicker">{{ section.settings.kicker | default: 'Ritual of Elegance' }}</p>
-      <h1 class="diqa-waterfall__title">{{ section.settings.title | default: 'Luxury in motion, calm in presence.' }}</h1>
-      <p class="diqa-waterfall__copy">{{ section.settings.copy | default: 'A refined visual experience inspired by flowing water. Crafted for women who choose quiet confidence.' }}</p>
-      <div class="diqa-waterfall__actions">
-        {% assign primary_href = section.settings.primary_link | default: routes.collections_url %}
-        {% assign secondary_href = section.settings.secondary_link | default: '' %}
+    <div class="diqa-waterfall__left">
+      <div class="diqa-waterfall__content">
+        <p class="diqa-waterfall__kicker">{{ section.settings.kicker | default: 'Ritual of Elegance' }}</p>
+        <h1 class="diqa-waterfall__title">{{ section.settings.title | default: 'Luxury in motion, calm in presence.' }}</h1>
+        <p class="diqa-waterfall__copy">{{ section.settings.copy | default: 'A refined visual experience inspired by flowing water. Crafted for women who choose quiet confidence.' }}</p>
+        <div class="diqa-waterfall__actions">
+          {% assign primary_href = section.settings.primary_link | default: routes.collections_url %}
+          {% assign secondary_href = section.settings.secondary_link | default: '' %}
 
-        <a class="button button-primary" href="{{ primary_href }}">
-          {{ section.settings.primary_label | default: 'Discover Collection' }}
-        </a>
-
-        {% if secondary_href != blank and secondary_href != primary_href %}
-          <a class="button button-secondary" href="{{ secondary_href }}">
-            {{ section.settings.secondary_label | default: 'Explore Story' }}
+          <a class="button button-primary" href="{{ primary_href }}">
+            {{ section.settings.primary_label | default: 'Discover Collection' }}
           </a>
-        {% endif %}
+
+          {% if secondary_href != blank and secondary_href != primary_href %}
+            <a class="button button-secondary" href="{{ secondary_href }}">
+              {{ section.settings.secondary_label | default: 'Explore Story' }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="diqa-waterfall__micro">
+        <span>Premium fabrics</span>
+        <span>Soft structure</span>
+        <span>Modern modest luxury</span>
       </div>
     </div>
 
-    <div class="diqa-waterfall__panel" data-waterfall-tilt>
-      <p class="diqa-waterfall__panel-kicker">{{ section.settings.panel_kicker }}</p>
-      <p class="diqa-waterfall__panel-text">{{ section.settings.panel_text }}</p>
-      <span class="diqa-waterfall__panel-line" aria-hidden="true"></span>
+    <div class="diqa-waterfall__stage-wrap" data-waterfall-tilt>
+      <div class="diqa-waterfall__orb diqa-waterfall__orb--one" aria-hidden="true"></div>
+      <div class="diqa-waterfall__orb diqa-waterfall__orb--two" aria-hidden="true"></div>
+      <div class="diqa-waterfall__orb diqa-waterfall__orb--three" aria-hidden="true"></div>
+
+      <div class="diqa-waterfall__stage">
+        <article class="diqa-waterfall__panel">
+          <p class="diqa-waterfall__panel-kicker">{{ section.settings.panel_kicker }}</p>
+          <p class="diqa-waterfall__panel-text">{{ section.settings.panel_text }}</p>
+          <span class="diqa-waterfall__panel-line" aria-hidden="true"></span>
+        </article>
+        <div class="diqa-waterfall__card diqa-waterfall__card--a">
+          <strong>Editorial Drop</strong>
+          <span>New silhouettes</span>
+        </div>
+        <div class="diqa-waterfall__card diqa-waterfall__card--b">
+          <strong>Signature Tone</strong>
+          <span>Ivory and champagne</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
