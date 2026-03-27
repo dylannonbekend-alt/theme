@@ -267,29 +267,29 @@
     "diqa_product_enhancements_Jy91qe": {
       "type": "diqa-product-enhancements",
       "settings": {
-        "heading": "Refined in every detail",
-        "description": "For women who choose elegance with intention. Designed to feel effortless, polished and quietly powerful.",
-        "badge_one": "Premium fabric quality",
-        "badge_two": "Secure checkout",
-        "badge_three": "Fast EU shipping",
-        "button_label": "Add to Bag",
-        "sticky_note": "Premium quality, made to last",
-        "secure_note": "Secure checkout",
-        "guarantee_one": "Quality checked before shipping",
-        "guarantee_two": "Easy returns and exchanges"
+        "heading": "Verzorgd in elk detail",
+        "description": "Ontworpen voor dagelijks gebruik met een nette uitstraling, comfortabele pasvorm en duurzame afwerking.",
+        "badge_one": "Kwaliteitsstof",
+        "badge_two": "Veilig afrekenen",
+        "badge_three": "Snelle EU-verzending",
+        "button_label": "Toevoegen aan winkelmand",
+        "sticky_note": "Duurzame kwaliteit voor dagelijks gebruik",
+        "secure_note": "Veilig afrekenen",
+        "guarantee_one": "Kwaliteitscontrole voor verzending",
+        "guarantee_two": "Eenvoudig retourneren en omruilen"
       }
     },
     "diqa_product_editorial_copy_u82d": {
       "type": "diqa-product-story",
       "settings": {
-        "kicker": "Product Story",
-        "intro": "A refined essential for the modern modest wardrobe. Crafted in premium fabric for a soft hand-feel and elegant drape. Designed for women who move with calm confidence.",
-        "point_one_title": "Why it stands out",
-        "point_one_text": "Premium fabric, breathable comfort, and a graceful fall finished with clean, disciplined detail.",
-        "point_two_title": "Fit & Feel",
-        "point_two_text": "Balanced silhouette with an effortless feel that stays polished from day to evening.",
-        "point_three_title": "Care",
-        "point_three_text": "Handle with care to preserve quality and finish. See our Fabric Care page for full guidance."
+        "kicker": "Productinformatie",
+        "intro": "Een sterke basis voor een moderne, bescheiden garderobe. Gemaakt van kwaliteitsstof met een comfortabele pasvorm en nette valling.",
+        "point_one_title": "Waarom dit product",
+        "point_one_text": "Goede stofkwaliteit, ademend comfort en een verzorgde afwerking.",
+        "point_two_title": "Pasvorm en draaggevoel",
+        "point_two_text": "Gebalanceerd silhouet dat prettig draagt en er de hele dag netjes uitziet.",
+        "point_three_title": "Onderhoud",
+        "point_three_text": "Behandel met zorg om kwaliteit en afwerking te behouden. Bekijk de pagina Stofverzorging voor volledige instructies."
       }
     },
     "product_recommendations_qggXJq": {
@@ -299,7 +299,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-                "text": "<h3>You may also like</h3>",
+                "text": "<h3>Misschien ook interessant</h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",

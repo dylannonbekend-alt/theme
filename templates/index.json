@@ -11,15 +11,15 @@
     "diqa_immersive_showcase_r8T2": {
       "type": "diqa-immersive-showcase",
       "settings": {
-        "kicker": "Signature Layers",
-        "title": "A softer expression of modern luxury.",
-        "copy": "Layered depth and subtle movement inspired by premium drape. Editorial, calm and intentionally minimal.",
+        "kicker": "Collectie in lagen",
+        "title": "Een rustige uitstraling met diepte.",
+        "copy": "Gelaagde diepte en subtiele beweging, gebaseerd op de manier waarop de stof valt. Rustig, modern en overzichtelijk.",
         "card_one_label": "Abaya",
-        "card_one_text": "Fluid silhouettes with a graceful line.",
+        "card_one_text": "Vloeiende silhouetten met een strakke lijn.",
         "card_two_label": "Hijab",
-        "card_two_text": "Soft fall, breathable comfort, timeless elegance.",
-        "card_three_label": "Fabric",
-        "card_three_text": "Chosen for touch, movement and lasting quality.",
+        "card_two_text": "Lichte valling, ademend comfort en tijdloze stijl.",
+        "card_three_label": "Stof",
+        "card_three_text": "Gekozen op gevoel, beweging en lange levensduur.",
         "bg_start": "#f8f2e8",
         "bg_end": "#eee2d1",
         "accent": "#a7834e"
@@ -28,15 +28,15 @@
     "diqa_waterfall_hero_A1b9": {
       "type": "diqa-waterfall-hero",
       "settings": {
-        "kicker": "Desert Elegance",
-        "title": "Luxury in motion, calm in presence.",
-        "copy": "A refined visual experience inspired by Sahara light, Morocco details and Dubai elegance. Crafted for women who choose quiet confidence.",
-        "primary_label": "Discover Collection",
+        "kicker": "DIQA Collectie",
+        "title": "Stijl in beweging, rust in uitstraling.",
+        "copy": "Een heldere visuele stijl met invloeden uit Sahara-kleuren, Marokkaanse details en moderne uitstraling. Gemaakt voor dagelijks gebruik met een verzorgde look.",
+        "primary_label": "Bekijk collectie",
         "primary_link": "shopify://collections/all",
-        "secondary_label": "Explore Story",
+        "secondary_label": "Over DIQA",
         "secondary_link": "/pages/about",
         "panel_kicker": "DIQA Signature",
-        "panel_text": "Premium fabrics, warm sand tones, and timeless modest silhouettes with a clear Sahara mood.",
+        "panel_text": "Kwaliteitsstoffen, warme zandtinten en tijdloze bescheiden silhouetten.",
         "bg_start": "#f9f4eb",
         "bg_end": "#efe5d5",
         "accent": "#a7834e",
@@ -49,29 +49,29 @@
         "service_1": {
           "type": "service",
           "settings": {
-            "title": "Fast Shipping",
-            "text": "Shipped in 1-2 business days."
+            "title": "Snelle verzending",
+            "text": "Verzonden binnen 1-2 werkdagen."
           }
         },
         "service_2": {
           "type": "service",
           "settings": {
-            "title": "Easy Returns",
-            "text": "14-day return and exchange support."
+            "title": "Eenvoudig retourneren",
+            "text": "14 dagen retour en omruilen."
           }
         },
         "service_3": {
           "type": "service",
           "settings": {
-            "title": "Secure Checkout",
-            "text": "Encrypted and trusted payment flow."
+            "title": "Veilig afrekenen",
+            "text": "Beveiligde en betrouwbare betaalomgeving."
           }
         },
         "service_4": {
           "type": "service",
           "settings": {
-            "title": "Premium Quality",
-            "text": "Carefully selected fabrics and finishing."
+            "title": "Kwaliteit",
+            "text": "Zorgvuldig geselecteerde stoffen en afwerking."
           }
         }
       },
@@ -90,21 +90,21 @@
           "type": "category",
           "settings": {
             "title": "Abayas",
-            "text": "Elegant silhouettes with refined structure for day-to-evening wear."
+            "text": "Elegante silhouetten met een verzorgde pasvorm, geschikt voor elke dag."
           }
         },
         "category_hijab": {
           "type": "category",
           "settings": {
             "title": "Hijabs",
-            "text": "Lightweight drape and premium comfort designed for effortless styling."
+            "text": "Lichte valling en comfortabel draaggevoel voor eenvoudig stylen."
           }
         },
         "category_occasion": {
           "type": "category",
           "settings": {
-            "title": "Occasion Edit",
-            "text": "Polished pieces in understated tones for moments that matter."
+            "title": "Speciale gelegenheden",
+            "text": "Verzorgde items in rustige tinten voor momenten die belangrijk zijn."
           }
         }
       },
@@ -114,9 +114,9 @@
         "category_occasion"
       ],
       "settings": {
-        "kicker": "Collections",
-        "heading": "Designed with calm, worn with confidence.",
-        "copy": "A clean wardrobe architecture of abayas and hijabs with premium fabrics, soft tones and intentional details."
+        "kicker": "Collecties",
+        "heading": "Ontworpen voor een rustige, verzorgde uitstraling.",
+        "copy": "Een duidelijke collectieopbouw van abaya's en hijabs met kwaliteitsstoffen, zachte kleuren en functionele details."
       }
     },
     "diqa_brand_story_7Wq2Az": {
@@ -125,22 +125,22 @@
         "pillar_1": {
           "type": "pillar",
           "settings": {
-            "title": "Premium Fabric",
-            "copy": "Selected for softness, structure, and elegant drape."
+            "title": "Kwaliteitsstof",
+            "copy": "Geselecteerd op zachtheid, structuur en mooie valling."
           }
         },
         "pillar_2": {
           "type": "pillar",
           "settings": {
-            "title": "Refined Design",
-            "copy": "Minimal silhouettes with a modern modest edge."
+            "title": "Verzorgd ontwerp",
+            "copy": "Minimalistische silhouetten met een moderne, bescheiden stijl."
           }
         },
         "pillar_3": {
           "type": "pillar",
           "settings": {
-            "title": "Lasting Quality",
-            "copy": "Thoughtful finishing, made to be worn on repeat."
+            "title": "Duurzame kwaliteit",
+            "copy": "Nette afwerking, gemaakt om vaak te dragen."
           }
         }
       },
@@ -150,9 +150,9 @@
         "pillar_3"
       ],
       "settings": {
-        "kicker": "Brand Statement",
-        "heading": "Quiet luxury. Strong identity.",
-        "copy": "DIQA is built on balance. Feminine lines. Confident silhouettes. Craftsmanship with warm, elevated Morocco-Dubai character."
+        "kicker": "Merkverhaal",
+        "heading": "Duidelijke stijl. Sterke identiteit.",
+        "copy": "DIQA staat voor balans: vrouwelijke lijnen, sterke silhouetten en zorgvuldige afwerking met een subtiele Noord-Afrikaanse en Gulf-invloed."
       }
     },
     "diqa_testimonials_U2asEf": {
@@ -161,14 +161,14 @@
         "quote_1": {
           "type": "quote",
           "settings": {
-            "quote": "The fabric, fit, and finish feel exceptional. Quiet luxury at its best.",
+            "quote": "De stof, pasvorm en afwerking voelen direct goed aan.",
             "author": "Sara - Amsterdam"
           }
         },
         "quote_2": {
           "type": "quote",
           "settings": {
-            "quote": "Elegant without trying too hard. Exactly how I want to feel.",
+            "quote": "Verzorgd en stijlvol zonder overdaad. Precies wat ik zocht.",
             "author": "Noura - Rotterdam"
           }
         }
@@ -178,9 +178,9 @@
         "quote_2"
       ],
       "settings": {
-        "kicker": "Worn with confidence",
-        "heading": "Loved for its quiet refinement",
-        "copy": "Real words from women who choose elegance with intention."
+        "kicker": "Klantervaring",
+        "heading": "Gewaardeerd om pasvorm en kwaliteit",
+        "copy": "Ervaringen van klanten die kiezen voor een verzorgde, tijdloze stijl."
       }
     },
     "product_list_fa6P9H": {
@@ -250,7 +250,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "Alles bekijken",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",

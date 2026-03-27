@@ -17,29 +17,29 @@
   <div class="diqa-waterfall__inner page-width">
     <div class="diqa-waterfall__left">
       <div class="diqa-waterfall__content">
-        <p class="diqa-waterfall__kicker">{{ section.settings.kicker | default: 'Desert Elegance' }}</p>
-        <h1 class="diqa-waterfall__title">{{ section.settings.title | default: 'Luxury in motion, calm in presence.' }}</h1>
-        <p class="diqa-waterfall__copy">{{ section.settings.copy | default: 'A refined visual experience inspired by flowing water. Crafted for women who choose quiet confidence.' }}</p>
+        <p class="diqa-waterfall__kicker">{{ section.settings.kicker | default: 'DIQA Collectie' }}</p>
+        <h1 class="diqa-waterfall__title">{{ section.settings.title | default: 'Stijl in beweging, rust in uitstraling.' }}</h1>
+        <p class="diqa-waterfall__copy">{{ section.settings.copy | default: 'Een heldere visuele stijl met warme tinten en een moderne, verzorgde uitstraling.' }}</p>
         <div class="diqa-waterfall__actions">
           {% assign primary_href = section.settings.primary_link | default: routes.collections_url %}
           {% assign secondary_href = section.settings.secondary_link | default: '' %}
 
           <a class="button button-primary" href="{{ primary_href }}">
-            {{ section.settings.primary_label | default: 'Discover Collection' }}
+            {{ section.settings.primary_label | default: 'Bekijk collectie' }}
           </a>
 
           {% if secondary_href != blank and secondary_href != primary_href %}
             <a class="button button-secondary" href="{{ secondary_href }}">
-              {{ section.settings.secondary_label | default: 'Explore Story' }}
+              {{ section.settings.secondary_label | default: 'Over DIQA' }}
             </a>
           {% endif %}
         </div>
       </div>
 
       <div class="diqa-waterfall__micro">
-        <span>Sahara dusk tones</span>
-        <span>Dune-soft drape</span>
-        <span>Morocco and Dubai mood</span>
+        <span>Warme zandtinten</span>
+        <span>Comfortabele valling</span>
+        <span>Zakelijke premium stijl</span>
       </div>
     </div>
 
@@ -55,12 +55,12 @@
           <span class="diqa-waterfall__panel-line" aria-hidden="true"></span>
         </article>
         <div class="diqa-waterfall__card diqa-waterfall__card--a">
-          <strong>Desert Edit</strong>
-          <span>Sand-tone silhouettes</span>
+          <strong>Nieuwe selectie</strong>
+          <span>Silhouetten in zandtinten</span>
         </div>
         <div class="diqa-waterfall__card diqa-waterfall__card--b">
-          <strong>Golden Hour</strong>
-          <span>Sunset neutrals</span>
+          <strong>Kleurpalet</strong>
+          <span>Neutrale warme tinten</span>
         </div>
       </div>
     </div>
@@ -71,20 +71,20 @@
 {
   "name": "DIQA Waterfall Hero",
   "settings": [
-    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Desert Elegance" },
-    { "type": "text", "id": "title", "label": "Title", "default": "Luxury in motion, calm in presence." },
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "DIQA Collectie" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Stijl in beweging, rust in uitstraling." },
     {
       "type": "textarea",
       "id": "copy",
       "label": "Copy",
-      "default": "A refined visual experience inspired by flowing water. Crafted for women who choose quiet confidence."
+      "default": "Een heldere visuele stijl met warme tinten en een moderne, verzorgde uitstraling."
     },
-    { "type": "text", "id": "primary_label", "label": "Primary label", "default": "Discover Collection" },
+    { "type": "text", "id": "primary_label", "label": "Primary label", "default": "Bekijk collectie" },
     { "type": "url", "id": "primary_link", "label": "Primary link" },
-    { "type": "text", "id": "secondary_label", "label": "Secondary label", "default": "Explore Story" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary label", "default": "Over DIQA" },
     { "type": "url", "id": "secondary_link", "label": "Secondary link" },
     { "type": "text", "id": "panel_kicker", "label": "Panel kicker", "default": "DIQA Signature" },
-    { "type": "textarea", "id": "panel_text", "label": "Panel text", "default": "Premium fabrics, warm sand tones, and timeless modest silhouettes with a Morocco-Dubai touch." },
+    { "type": "textarea", "id": "panel_text", "label": "Panel text", "default": "Kwaliteitsstoffen, warme zandtinten en tijdloze bescheiden silhouetten." },
     { "type": "color", "id": "bg_start", "label": "Background start", "default": "#f9f4eb" },
     { "type": "color", "id": "bg_end", "label": "Background end", "default": "#efe5d5" },
     { "type": "color", "id": "accent", "label": "Accent", "default": "#a7834e" },
