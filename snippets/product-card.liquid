@@ -108,7 +108,10 @@
     "
   >
     {% unless onboarding %}
-      {% assign diqa_category = render 'diqa-product-category', product: product | strip %}
+      {% capture diqa_category %}
+        {% render 'diqa-product-category', product: product %}
+      {% endcapture %}
+      {% assign diqa_category = diqa_category | strip %}
       {% if diqa_category != blank %}
         <span class="diqa-product-category-badge">{{ diqa_category }}</span>
       {% endif %}
