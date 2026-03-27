@@ -2,6 +2,27 @@
   padding: 3.25rem 0 1.8rem;
 }
 
+/* Cleaner media styling on product page */
+main[data-template*='product'] .media-gallery__grid {
+  gap: 0.75rem;
+}
+
+main[data-template*='product'] .product-media-container {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(164, 136, 92, 0.2);
+  background: linear-gradient(165deg, #fffdf8, #f4ecde);
+  box-shadow: 0 12px 30px rgba(58, 45, 30, 0.08);
+}
+
+main[data-template*='product'] .product-media-container img {
+  border-radius: 0.75rem;
+}
+
+main[data-template*='product'] .thumbnail-list .product-media-container {
+  border-radius: 0.45rem;
+  box-shadow: none;
+}
+
 .diqa-product-enhance__wrap {
   border-radius: 0.35rem;
   border: 1px solid rgba(164, 136, 92, 0.24);
