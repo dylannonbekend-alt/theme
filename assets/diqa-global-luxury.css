@@ -71,6 +71,28 @@ main .rte h6 {
   filter: none;
 }
 
+@media screen and (min-width: 990px) {
+  #header-group .header__columns {
+    position: relative;
+  }
+
+  #header-group .header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  #header-group .header__column--left {
+    justify-content: flex-start;
+    padding-right: 12rem;
+  }
+
+  #header-group .header__column--right {
+    justify-content: flex-end;
+  }
+}
+
 @media screen and (max-width: 749px) {
   #header-group .header-logo img {
     max-height: 48px;
