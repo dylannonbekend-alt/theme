@@ -4,9 +4,9 @@
 
 .diqa-product-enhance__wrap {
   border-radius: 0.35rem;
-  border: 1px solid rgba(187, 170, 130, 0.2);
-  background: linear-gradient(158deg, #111218, #15161c);
-  color: #f6f3eb;
+  border: 1px solid rgba(164, 136, 92, 0.24);
+  background: linear-gradient(158deg, #fffdf9, #f3ebde);
+  color: #2d261f;
   padding: 1.2rem 1.2rem 1.1rem;
 }
 
@@ -15,12 +15,12 @@
   font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #bca773;
+  color: #a27f4a;
 }
 
 .diqa-product-enhance__text {
   margin: 0 0 0.95rem;
-  color: #cec6b7;
+  color: #5e5449;
   max-width: 58ch;
 }
 
@@ -35,12 +35,12 @@
 
 .diqa-trust-list li {
   border-radius: 0.28rem;
-  border: 1px solid rgba(187, 170, 130, 0.22);
-  background: rgba(255, 255, 255, 0.012);
+  border: 1px solid rgba(164, 136, 92, 0.22);
+  background: rgba(255, 252, 246, 0.84);
   padding: 0.7rem;
   font-size: 0.92rem;
   text-align: center;
-  color: #e5dfd2;
+  color: #4a4035;
 }
 
 .diqa-guarantee-row {
@@ -52,9 +52,9 @@
 
 .diqa-guarantee-row__item {
   margin: 0;
-  border-top: 1px solid rgba(187, 170, 130, 0.2);
+  border-top: 1px solid rgba(164, 136, 92, 0.24);
   padding-top: 0.65rem;
-  color: #dfd8cb;
+  color: #5c5247;
   font-size: 0.86rem;
 }
 
@@ -65,8 +65,8 @@
   transform: translate(-50%, 120%);
   width: min(94vw, 820px);
   z-index: 50;
-  background: rgba(14, 16, 21, 0.94);
-  border: 1px solid rgba(187, 170, 130, 0.34);
+  background: rgba(255, 250, 241, 0.95);
+  border: 1px solid rgba(164, 136, 92, 0.34);
   border-radius: 0.45rem;
   padding: 0.45rem;
   backdrop-filter: blur(10px);
@@ -91,18 +91,18 @@
 }
 
 .diqa-sticky-atc__title {
-  color: #f7f4ec;
+  color: #2f261d;
   font-size: 0.95rem;
   line-height: 1.2;
 }
 
 .diqa-sticky-atc__price {
-  color: #bca773;
+  color: #926f3e;
   font-size: 0.9rem;
 }
 
 .diqa-sticky-atc__note {
-  color: #bdb4a5;
+  color: #76695a;
   font-size: 0.78rem;
 }
 
@@ -112,8 +112,8 @@
   min-height: 2.5rem;
   padding: 0.5rem 1rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #d3c19a, #b89657);
-  color: #14151a;
+  background: linear-gradient(135deg, #c7a972, #aa8346);
+  color: #fffaf0;
   cursor: pointer;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .diqa-sticky-atc__secure {
-  color: #bdb4a5;
+  color: #7c6d5d;
   font-size: 0.72rem;
 }
 

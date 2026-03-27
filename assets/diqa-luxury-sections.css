@@ -3,19 +3,19 @@
 }
 
 .diqa-surface {
-  background: linear-gradient(168deg, #121318, #0f1014);
-  border: 1px solid rgba(187, 170, 128, 0.2);
+  background: linear-gradient(168deg, #fffdf9, #f5ede1);
+  border: 1px solid rgba(164, 136, 92, 0.25);
   border-radius: 0.4rem;
   padding: clamp(1.2rem, 4vw, 2.4rem);
-  color: #f7f4ed;
+  color: #2d261f;
 }
 
 .diqa-surface a {
-  color: #d8cfba;
+  color: #665136;
 }
 
 .diqa-surface a:hover {
-  color: #bca773;
+  color: #9f7d4a;
 }
 
 .diqa-kicker {
@@ -23,7 +23,7 @@
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.75rem;
-  color: #bca773;
+  color: #a27e4a;
 }
 
 .diqa-heading {
@@ -37,7 +37,7 @@
 .diqa-copy {
   margin: 0;
   max-width: 62ch;
-  color: #cbc7be;
+  color: #5d5348;
 }
 
 .diqa-grid-3 {
@@ -48,10 +48,10 @@
 }
 
 .diqa-pill {
-  border: 1px solid rgba(188, 167, 115, 0.24);
+  border: 1px solid rgba(164, 136, 92, 0.26);
   border-radius: 0.35rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.015);
+  background: rgba(255, 252, 246, 0.84);
 }
 
 .diqa-pill h3 {
@@ -61,11 +61,11 @@
 
 .diqa-pill p {
   margin: 0;
-  color: #c8c4ba;
+  color: #655b50;
 }
 
 .diqa-pill summary {
-  color: #f1ebde;
+  color: #3a3229;
   cursor: pointer;
 }
 
@@ -77,21 +77,21 @@
 }
 
 .diqa-quote {
-  border-left: 2px solid #bca773;
+  border-left: 2px solid #a7834e;
   padding: 0.9rem 1rem;
-  background: rgba(255, 255, 255, 0.015);
+  background: rgba(255, 252, 246, 0.84);
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
 .diqa-quote p {
   margin: 0;
-  color: #d7d4cb;
+  color: #5e5449;
 }
 
 .diqa-quote strong {
   display: inline-block;
   margin-top: 0.6rem;
-  color: #f5f2ea;
+  color: #2f281f;
 }
 
 @media screen and (max-width: 989px) {
