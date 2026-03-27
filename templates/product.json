@@ -24,9 +24,9 @@
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "bottom",
             "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
+            "aspect_ratio": "portrait",
             "constrain_to_viewport": true,
-            "media_fit": "contain",
+            "media_fit": "cover",
             "media_radius": 0,
             "extend_media": false,
             "zoom": true,
@@ -446,8 +446,8 @@
   },
   "order": [
     "main",
-    "diqa_product_enhancements_Jy91qe",
     "diqa_product_editorial_copy_u82d",
+    "diqa_product_enhancements_Jy91qe",
     "product_recommendations_qggXJq"
   ]
 }
