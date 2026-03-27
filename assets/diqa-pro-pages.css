@@ -1,12 +1,13 @@
 .diqa-page-hero {
-  padding: 4.5rem 0 2rem;
+  padding: 3.4rem 0 1.4rem;
 }
 
 .diqa-page-hero__inner {
-  border: 1px solid rgba(188, 167, 115, 0.2);
-  border-radius: 0.4rem;
-  background: linear-gradient(165deg, #121319, #0f1014);
-  padding: clamp(1.2rem, 4vw, 2.4rem);
+  border: 1px solid rgba(164, 136, 92, 0.22);
+  border-radius: 0.7rem;
+  background: linear-gradient(162deg, #fffdf9, #f4ebde);
+  box-shadow: 0 12px 30px rgba(86, 63, 31, 0.08);
+  padding: clamp(1.35rem, 3.8vw, 2.3rem);
 }
 
 .diqa-page-hero__kicker {
@@ -14,49 +15,61 @@
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.72rem;
-  color: #bca773;
+  color: #8e7146;
 }
 
 .diqa-page-hero__title {
   margin: 0.7rem 0 0.6rem;
-  color: #f4efe4;
+  color: #2a2219;
   font-family: "Times New Roman", Georgia, serif;
   font-size: clamp(1.9rem, 4.2vw, 3.1rem);
   font-weight: 500;
+  line-height: 1.08;
 }
 
 .diqa-page-hero__copy {
   margin: 0;
-  color: #d0c9ba;
+  color: #574a3a;
   max-width: 72ch;
 }
 
 .diqa-pro-stack {
-  padding: 1.25rem 0 4rem;
+  padding: 0.85rem 0 3.1rem;
 }
 
 .diqa-pro-card {
-  border: 1px solid rgba(188, 167, 115, 0.2);
-  background: linear-gradient(170deg, #121319, #101117);
-  border-radius: 0.35rem;
-  padding: 1rem;
+  border: 1px solid rgba(164, 136, 92, 0.2);
+  background: linear-gradient(165deg, #fffdf9, #f4ecde);
+  border-radius: 0.6rem;
+  box-shadow: 0 10px 24px rgba(86, 63, 31, 0.07);
+  padding: 1.05rem 1.1rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .diqa-pro-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .diqa-pro-card h3 {
   margin: 0 0 0.45rem;
-  color: #f1ebde;
-  font-size: 1.06rem;
+  color: #2f261c;
+  font-size: 1.02rem;
+  line-height: 1.2;
 }
 
 .diqa-pro-card p {
   margin: 0;
-  color: #cdc6b8;
+  color: #5f5240;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.diqa-pro-card:hover {
+  border-color: rgba(164, 136, 92, 0.36);
+  box-shadow: 0 14px 28px rgba(86, 63, 31, 0.1);
+  transform: translateY(-2px);
 }
 
 .diqa-newsletter {
@@ -64,22 +77,22 @@
 }
 
 .diqa-newsletter__box {
-  border: 1px solid rgba(188, 167, 115, 0.24);
-  border-radius: 0.4rem;
-  background: linear-gradient(160deg, #121319, #101117);
+  border: 1px solid rgba(164, 136, 92, 0.24);
+  border-radius: 0.55rem;
+  background: linear-gradient(160deg, #fffdf8, #f3ebdd);
   padding: clamp(1rem, 3vw, 1.8rem);
 }
 
 .diqa-newsletter__box .diqa-page-hero__kicker {
-  color: #c6b186;
+  color: #8e7146;
 }
 
 .diqa-newsletter__box .diqa-page-hero__title {
-  color: #f4efe3;
+  color: #2a2219;
 }
 
 .diqa-newsletter__box .diqa-page-hero__copy {
-  color: #d2cabc;
+  color: #5f5240;
 }
 
 .diqa-newsletter__row {
@@ -91,25 +104,25 @@
 
 .diqa-newsletter input[type='email'] {
   min-height: 2.8rem;
-  background: #151820;
-  color: #ece7dc;
-  border: 1px solid rgba(188, 167, 115, 0.26);
+  background: #fffcf7;
+  color: #2f261d;
+  border: 1px solid rgba(164, 136, 92, 0.28);
 }
 
 .diqa-newsletter input[type='email']::placeholder {
-  color: #b7af9e;
+  color: #968773;
 }
 
 .diqa-newsletter__row .button {
   min-height: 2.8rem;
-  background: #0f1218;
-  border: 1px solid rgba(188, 167, 115, 0.34);
-  color: #f0eadc !important;
+  background: #fffaf2;
+  border: 1px solid rgba(164, 136, 92, 0.36);
+  color: #2f261d !important;
 }
 
 .diqa-newsletter__row .button:hover {
-  border-color: rgba(188, 167, 115, 0.6);
-  color: #f7f1e3 !important;
+  border-color: rgba(164, 136, 92, 0.55);
+  color: #2a2017 !important;
 }
 
 .diqa-policy-links {
@@ -127,17 +140,17 @@
 
 .diqa-policy-links a {
   display: block;
-  border: 1px solid rgba(188, 167, 115, 0.2);
+  border: 1px solid rgba(164, 136, 92, 0.2);
   border-radius: 0.3rem;
   padding: 0.8rem 0.9rem;
   text-decoration: none;
-  color: #ddd5c6;
-  background: rgba(255, 255, 255, 0.01);
+  color: #4e4031;
+  background: rgba(255, 250, 241, 0.88);
 }
 
 .diqa-policy-links a:hover {
-  border-color: rgba(188, 167, 115, 0.44);
-  color: #bca773;
+  border-color: rgba(164, 136, 92, 0.44);
+  color: #7a603c;
 }
 
 @media screen and (max-width: 989px) {
