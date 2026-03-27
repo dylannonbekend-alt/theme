@@ -30,7 +30,7 @@
 
 .diqa-immersive__title {
   margin: 0.65rem 0 0.85rem;
-  color: #f4efe2;
+  color: #2a231c;
   font-size: clamp(1.9rem, 4vw, 3.6rem);
   line-height: 1.06;
   font-family: "Times New Roman", Georgia, serif;
@@ -39,7 +39,7 @@
 
 .diqa-immersive__copy {
   margin: 0;
-  color: #ccc5b8;
+  color: #5a5044;
   max-width: 54ch;
 }
 
@@ -54,7 +54,7 @@
   width: min(88%, 24rem);
   border: 1px solid rgba(188, 167, 115, 0.25);
   border-radius: 0.35rem;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(246, 237, 222, 0.88));
   backdrop-filter: blur(4px);
   padding: 1.1rem;
   box-shadow: 0 20px 36px rgba(0, 0, 0, 0.25);
@@ -82,7 +82,7 @@
 
 .diqa-immersive-card__label {
   margin: 0;
-  color: #d3c49f;
+  color: #8b6a3c;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.72rem;
@@ -90,7 +90,7 @@
 
 .diqa-immersive-card__text {
   margin: 0.55rem 0 0;
-  color: #ece6d8;
+  color: #4d4135;
 }
 
 @media screen and (max-width: 989px) {
