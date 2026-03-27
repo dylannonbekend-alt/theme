@@ -130,32 +130,6 @@
                   },
                   "blocks": {}
                 },
-                "text_category_diqa": {
-                  "type": "text",
-                  "name": "Product category",
-                  "settings": {
-                    "text": "<p class=\"diqa-product-category-inline\">Categorie: {% assign p_type = closest.product.type | downcase %}{% assign p_title = closest.product.title | downcase %}{% if p_type contains 'abaya' or p_title contains 'abaya' %}Abaya's{% elsif p_type contains 'hijab' or p_title contains 'hijab' %}Hijabs{% elsif closest.product.type != blank %}{{ closest.product.type }}{% else %}Product{% endif %}</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "0.9rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
@@ -181,7 +155,6 @@
               },
               "block_order": [
                 "text_xrnftG",
-                "text_category_diqa",
                 "price_tVjtKg"
               ]
             },

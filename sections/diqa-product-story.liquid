@@ -23,36 +23,6 @@
           <p>{{ section.settings.point_three_text }}</p>
         </article>
       </div>
-
-      <div class="diqa-attributes">
-        <h3 class="diqa-attributes__heading">{{ section.settings.attributes_heading }}</h3>
-        <dl class="diqa-attributes__grid">
-          {% if section.settings.attr_1_label != blank and section.settings.attr_1_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_1_label }}</dt><dd>{{ section.settings.attr_1_value }}</dd></div>
-          {% endif %}
-          {% if section.settings.attr_2_label != blank and section.settings.attr_2_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_2_label }}</dt><dd>{{ section.settings.attr_2_value }}</dd></div>
-          {% endif %}
-          {% if section.settings.attr_3_label != blank and section.settings.attr_3_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_3_label }}</dt><dd>{{ section.settings.attr_3_value }}</dd></div>
-          {% endif %}
-          {% if section.settings.attr_4_label != blank and section.settings.attr_4_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_4_label }}</dt><dd>{{ section.settings.attr_4_value }}</dd></div>
-          {% endif %}
-          {% if section.settings.attr_5_label != blank and section.settings.attr_5_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_5_label }}</dt><dd>{{ section.settings.attr_5_value }}</dd></div>
-          {% endif %}
-          {% if section.settings.attr_6_label != blank and section.settings.attr_6_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_6_label }}</dt><dd>{{ section.settings.attr_6_value }}</dd></div>
-          {% endif %}
-          {% if section.settings.attr_7_label != blank and section.settings.attr_7_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_7_label }}</dt><dd>{{ section.settings.attr_7_value }}</dd></div>
-          {% endif %}
-          {% if section.settings.attr_8_label != blank and section.settings.attr_8_value != blank %}
-            <div class="diqa-attributes__item"><dt>{{ section.settings.attr_8_label }}</dt><dd>{{ section.settings.attr_8_value }}</dd></div>
-          {% endif %}
-        </dl>
-      </div>
     </div>
   </div>
 </section>
@@ -108,30 +78,7 @@
       "id": "point_three_text",
       "label": "Point 3 text",
       "default": "Behandel met zorg om kwaliteit en afwerking te behouden. Bekijk de pagina Stofverzorging voor volledige instructies."
-    },
-    {
-      "type": "text",
-      "id": "attributes_heading",
-      "label": "Kenmerken titel",
-      "default": "Belangrijkste kenmerken"
-    },
-    { "type": "text", "id": "attr_1_label", "label": "Kenmerk 1 label", "default": "Type" },
-    { "type": "text", "id": "attr_1_value", "label": "Kenmerk 1 waarde", "default": "Abaya" },
-    { "type": "text", "id": "attr_2_label", "label": "Kenmerk 2 label", "default": "Materiaal" },
-    { "type": "text", "id": "attr_2_value", "label": "Kenmerk 2 waarde", "default": "Premium satijn" },
-    { "type": "text", "id": "attr_3_label", "label": "Kenmerk 3 label", "default": "Lengte" },
-    { "type": "text", "id": "attr_3_value", "label": "Kenmerk 3 waarde", "default": "Maxi" },
-    { "type": "text", "id": "attr_4_label", "label": "Kenmerk 4 label", "default": "Pasvorm" },
-    { "type": "text", "id": "attr_4_value", "label": "Kenmerk 4 waarde", "default": "Regular" },
-    { "type": "text", "id": "attr_5_label", "label": "Kenmerk 5 label", "default": "Mouwlengte" },
-    { "type": "text", "id": "attr_5_value", "label": "Kenmerk 5 waarde", "default": "Lange mouw" },
-    { "type": "text", "id": "attr_6_label", "label": "Kenmerk 6 label", "default": "Hals" },
-    { "type": "text", "id": "attr_6_value", "label": "Kenmerk 6 waarde", "default": "Ronde hals" },
-    { "type": "text", "id": "attr_7_label", "label": "Kenmerk 7 label", "default": "Seizoen" },
-    { "type": "text", "id": "attr_7_value", "label": "Kenmerk 7 waarde", "default": "Lente, zomer, herfst" },
-    { "type": "text", "id": "attr_8_label", "label": "Kenmerk 8 label", "default": "Eigenschappen" },
-    { "type": "text", "id": "attr_8_value", "label": "Kenmerk 8 waarde", "default": "Ademend, lichtgewicht, sneldrogend" }
-    
+    }
   ],
   "presets": [
     {

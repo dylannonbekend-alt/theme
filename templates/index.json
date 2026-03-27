@@ -37,17 +37,6 @@
         "secondary_link": "/pages/about",
         "panel_kicker": "DIQA Signature",
         "panel_text": "Kwaliteitsstoffen, warme zandtinten en tijdloze bescheiden silhouetten.",
-        "topic_one_label": "Abaya's",
-        "topic_one_text": "Onze abaya's hebben een verzorgde pasvorm, rustige lijnen en zijn geschikt voor dagelijks gebruik.",
-        "topic_one_link": "shopify://collections/abayas",
-        "topic_two_label": "Hijabs",
-        "topic_two_text": "Hijabs met comfortabele stofkwaliteit en neutrale kleuren die eenvoudig te combineren zijn.",
-        "topic_two_link": "shopify://collections/hijabs",
-        "topic_three_label": "Stof",
-        "topic_three_text": "Onze stofkwaliteit is geselecteerd op draagcomfort, duurzaamheid en een nette valling bij dagelijks gebruik.",
-        "topic_three_link": "/pages/fabric-care",
-        "topic_cta_label": "Bekijk meer",
-        "topic_hint": "Klik op een categorie om direct naar producten te gaan.",
         "bg_start": "#f9f4eb",
         "bg_end": "#efe5d5",
         "accent": "#a7834e",
@@ -367,17 +356,13 @@
           ]
         }
       },
-      "block_order": [
-        "static-header",
-        "static-product-card"
-      ],
       "name": "Featured collection",
       "settings": {
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
+        "max_products": 6,
+        "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 16,
@@ -388,17 +373,17 @@
         "horizontal_alignment": "flex-start",
         "gap": 32,
         "color_scheme": "scheme-1",
-        "padding-block-start": 12,
-        "padding-block-end": 40
+        "padding-block-start": 32,
+        "padding-block-end": 64
       }
     }
   },
   "order": [
     "diqa_waterfall_hero_A1b9",
-    "product_list_fa6P9H",
     "diqa_service_strip_pro_a29",
     "diqa_brand_story_7Wq2Az",
     "diqa_collection_intro_home_L9s2",
+    "product_list_fa6P9H",
     "diqa_immersive_showcase_r8T2",
     "diqa_testimonials_U2asEf"
   ]
