@@ -35,21 +35,6 @@
           {% endif %}
         </div>
 
-        {% assign hero_products = collections['all'].products %}
-        {% if hero_products.size > 0 %}
-          <div class="diqa-waterfall__quick-products">
-            {% for hero_product in hero_products limit: 4 %}
-              <a class="diqa-waterfall__quick-product" href="{{ hero_product.url }}">
-                <span class="diqa-waterfall__quick-title">{{ hero_product.title }}</span>
-                <span class="diqa-waterfall__quick-price">
-                  {% if hero_product.selected_or_first_available_variant %}
-                    {{ hero_product.selected_or_first_available_variant.price | money }}
-                  {% endif %}
-                </span>
-              </a>
-            {% endfor %}
-          </div>
-        {% endif %}
       </div>
 
       <div class="diqa-waterfall__micro">
@@ -112,14 +97,6 @@
           </div>
           <span class="diqa-waterfall__panel-line" aria-hidden="true"></span>
         </article>
-        <div class="diqa-waterfall__card diqa-waterfall__card--a">
-          <strong>Nieuwe selectie</strong>
-          <span>Silhouetten in zandtinten</span>
-        </div>
-        <div class="diqa-waterfall__card diqa-waterfall__card--b">
-          <strong>Kleurpalet</strong>
-          <span>Neutrale warme tinten</span>
-        </div>
       </div>
     </div>
   </div>
