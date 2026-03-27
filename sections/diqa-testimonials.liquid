@@ -1,0 +1,88 @@
+{{ 'diqa-luxury-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-section">
+  <div class="page-width">
+    <div class="diqa-surface">
+      <p class="diqa-kicker">{{ section.settings.kicker }}</p>
+      <h2 class="diqa-heading">{{ section.settings.heading }}</h2>
+      <p class="diqa-copy">{{ section.settings.copy }}</p>
+
+      <div class="diqa-quotes">
+        {% for block in section.blocks %}
+          <blockquote class="diqa-quote" {{ block.shopify_attributes }}>
+            <p>"{{ block.settings.quote }}"</p>
+            <strong>{{ block.settings.author }}</strong>
+          </blockquote>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Client Voice"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Loved by premium shoppers"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Text",
+      "default": "Real feedback from customers who value quality and style."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote",
+          "default": "The finishing, packaging and quality are truly top-tier."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Amina - Amsterdam"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "DIQA Testimonials",
+      "blocks": [
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "The finishing, packaging and quality are truly top-tier.",
+            "author": "Amina - Amsterdam"
+          }
+        },
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "A clean luxury look with very fast delivery and premium feel.",
+            "author": "Youssef - Rotterdam"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

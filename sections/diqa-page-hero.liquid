@@ -1,0 +1,23 @@
+{{ 'diqa-pro-pages.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-page-hero">
+  <div class="page-width">
+    <div class="diqa-page-hero__inner">
+      <p class="diqa-page-hero__kicker">{{ section.settings.kicker }}</p>
+      <h1 class="diqa-page-hero__title">{{ section.settings.title }}</h1>
+      <p class="diqa-page-hero__copy">{{ section.settings.copy }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Page Hero",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "DIQA" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Page title" },
+    { "type": "textarea", "id": "copy", "label": "Text", "default": "Use this space for a concise premium introduction." }
+  ],
+  "presets": [{ "name": "DIQA Page Hero" }]
+}
+{% endschema %}

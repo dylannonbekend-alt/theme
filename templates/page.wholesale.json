@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "hero": {
+      "type": "diqa-page-hero",
+      "settings": {
+        "kicker": "Wholesale",
+        "title": "Wholesale and partnership requests",
+        "copy": "For boutiques and partners interested in DIQA premium Abaya and Hijab collections."
+      }
+    },
+    "details": {
+      "type": "diqa-contact-details",
+      "settings": {
+        "card_one_title": "Wholesale Program",
+        "card_one_text": "Curated seasonal collections with premium fabric standards and brand support.",
+        "card_two_title": "Order Volumes",
+        "card_two_text": "Flexible opening orders and restock options based on availability.",
+        "card_three_title": "Get in Touch",
+        "card_three_text": "Email business@diqa.com with your store profile and market."
+      }
+    },
+    "contact_form": {
+      "type": "section",
+      "blocks": {
+        "contact_form_wholesale": {
+          "type": "contact-form",
+          "settings": {
+            "width": "custom",
+            "custom_width": 60,
+            "width_mobile": "custom",
+            "custom_width_mobile": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "submit-button": {
+              "type": "contact-form-submit-button",
+              "static": true,
+              "settings": {
+                "label": "Send request",
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
+        }
+      },
+      "block_order": ["contact_form_wholesale"],
+      "name": "Wholesale Contact Form",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 28,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 72
+      }
+    }
+  },
+  "order": ["hero", "details", "contact_form"]
+}

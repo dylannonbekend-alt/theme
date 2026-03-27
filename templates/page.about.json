@@ -1,0 +1,130 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */{
+  "sections": {
+    "diqa_page_hero_about_a21f": {
+      "type": "diqa-page-hero",
+      "settings": {
+        "kicker": "About DIQA",
+        "title": "Modern modest luxury for Abayas and Hijabs",
+        "copy": "DIQA creates premium pieces with elegant drape, refined finishing and a calm timeless identity."
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "page-content": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DIQA staat voor moderne bescheiden luxe. Wij ontwerpen Abaya's en Hijabs met focus op premium stof, rustige lijnen en sterke details.</p><p>Ons doel is tijdloze items te maken die elegant aanvoelen en moeiteloos gedragen worden in het dagelijks leven.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 16
+      }
+    },
+    "diqa_about_signature_u9PkQm": {
+      "type": "diqa-about-signature",
+      "blocks": {
+        "point_1": {
+          "type": "point",
+          "settings": {
+            "title": "Materials first",
+            "text": "A considered material selection with a focus on durability and tactile quality."
+          }
+        },
+        "point_2": {
+          "type": "point",
+          "settings": {
+            "title": "Refined details",
+            "text": "Every detail is selected to keep the visual language calm, elegant and premium."
+          }
+        },
+        "point_3": {
+          "type": "point",
+          "settings": {
+            "title": "Timeless direction",
+            "text": "DIQA designs are created to stay relevant beyond short-lived trends."
+          }
+        }
+      },
+      "block_order": [
+        "point_1",
+        "point_2",
+        "point_3"
+      ],
+      "settings": {
+        "kicker": "About DIQA",
+        "heading": "Quiet luxury with character",
+        "copy": "DIQA was built around timeless design, restrained detail, and premium quality you can feel."
+      }
+    },
+    "diqa_testimonials_about_jx93eR": {
+      "type": "diqa-testimonials",
+      "blocks": {
+        "quote_1": {
+          "type": "quote",
+          "settings": {
+            "quote": "The quality feels premium in every detail.",
+            "author": "Nadia - Utrecht"
+          }
+        },
+        "quote_2": {
+          "type": "quote",
+          "settings": {
+            "quote": "Calm design, luxury finish, exactly what I wanted.",
+            "author": "Imran - Antwerp"
+          }
+        }
+      },
+      "block_order": [
+        "quote_1",
+        "quote_2"
+      ],
+      "settings": {
+        "kicker": "Client Voice",
+        "heading": "Trusted by our community",
+        "copy": "Feedback from clients who value a premium and understated style."
+      }
+    }
+  },
+  "order": [
+    "diqa_page_hero_about_a21f",
+    "main",
+    "diqa_about_signature_u9PkQm",
+    "diqa_testimonials_about_jx93eR"
+  ]
+}

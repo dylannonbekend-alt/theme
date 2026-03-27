@@ -1,0 +1,113 @@
+{{ 'diqa-product-luxury.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'diqa-product-luxury.js' | asset_url }}" defer></script>
+
+<section class="diqa-product-enhance" data-diqa-product-enhance>
+  <div class="page-width">
+    <div class="diqa-product-enhance__wrap">
+      <p class="diqa-product-enhance__title">{{ section.settings.heading }}</p>
+      <p class="diqa-product-enhance__text">{{ section.settings.description }}</p>
+      <ul class="diqa-trust-list">
+        <li>{{ section.settings.badge_one }}</li>
+        <li>{{ section.settings.badge_two }}</li>
+        <li>{{ section.settings.badge_three }}</li>
+      </ul>
+      <div class="diqa-guarantee-row">
+        <p class="diqa-guarantee-row__item">{{ section.settings.guarantee_one }}</p>
+        <p class="diqa-guarantee-row__item">{{ section.settings.guarantee_two }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="diqa-sticky-atc" data-diqa-sticky>
+    <div class="diqa-sticky-atc__inner">
+      <div class="diqa-sticky-atc__meta">
+        <span class="diqa-sticky-atc__title" data-diqa-sticky-title>{{ product.title }}</span>
+        <span class="diqa-sticky-atc__price" data-diqa-sticky-price>
+          {% if product.selected_or_first_available_variant %}
+            {{ product.selected_or_first_available_variant.price | money }}
+          {% endif %}
+        </span>
+        <span class="diqa-sticky-atc__note">{{ section.settings.sticky_note }}</span>
+      </div>
+      <div class="diqa-sticky-atc__cta">
+        <button type="button" class="diqa-sticky-atc__button" data-diqa-sticky-add>
+          {{ section.settings.button_label }}
+        </button>
+        <span class="diqa-sticky-atc__secure">{{ section.settings.secure_note }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Product Enhancements",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Refined in every detail"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Designed to feel calm, polished and confident from the first wear."
+    },
+    {
+      "type": "text",
+      "id": "badge_one",
+      "label": "Badge 1",
+      "default": "Premium finish"
+    },
+    {
+      "type": "text",
+      "id": "badge_two",
+      "label": "Badge 2",
+      "default": "Secure checkout"
+    },
+    {
+      "type": "text",
+      "id": "badge_three",
+      "label": "Badge 3",
+      "default": "Fast EU shipping"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Sticky button label",
+      "default": "Add to Bag"
+    },
+    {
+      "type": "text",
+      "id": "sticky_note",
+      "label": "Sticky note",
+      "default": "Premium quality, made to last"
+    },
+    {
+      "type": "text",
+      "id": "secure_note",
+      "label": "Secure note",
+      "default": "Secure checkout"
+    },
+    {
+      "type": "text",
+      "id": "guarantee_one",
+      "label": "Guarantee 1",
+      "default": "Quality checked before shipping"
+    },
+    {
+      "type": "text",
+      "id": "guarantee_two",
+      "label": "Guarantee 2",
+      "default": "Easy returns and exchanges"
+    }
+  ],
+  "presets": [
+    {
+      "name": "DIQA Product Enhancements"
+    }
+  ]
+}
+{% endschema %}

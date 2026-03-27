@@ -1,0 +1,146 @@
+.diqa-roadmap {
+  position: relative;
+  padding: 5.5rem 0;
+  background: linear-gradient(180deg, #101218, #0e1015);
+  border-top: 1px solid rgba(188, 167, 115, 0.14);
+  border-bottom: 1px solid rgba(188, 167, 115, 0.14);
+}
+
+.diqa-roadmap__intro {
+  margin-bottom: 2rem;
+}
+
+.diqa-roadmap__kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  color: #bca773;
+}
+
+.diqa-roadmap__title {
+  margin: 0.8rem 0 0.75rem;
+  color: #f4efe3;
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4.2vw, 3rem);
+  max-width: 26ch;
+}
+
+.diqa-roadmap__copy {
+  margin: 0;
+  color: #cfc8b8;
+  max-width: 70ch;
+}
+
+.diqa-roadmap__track,
+.diqa-roadmap__progress {
+  height: 1px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.diqa-roadmap__track {
+  background: rgba(188, 167, 115, 0.2);
+}
+
+.diqa-roadmap__progress {
+  width: 0%;
+  background: linear-gradient(90deg, #8f7a4a, #c7b186);
+  margin-top: -1px;
+  transition: width 320ms ease;
+}
+
+.diqa-roadmap__steps {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  perspective: 1000px;
+}
+
+.diqa-roadmap__step {
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.32rem;
+  border: 1px solid rgba(188, 167, 115, 0.22);
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  transform: translateY(10px) rotateX(7deg);
+  opacity: 0.65;
+  transition: transform 300ms ease, opacity 300ms ease, border-color 300ms ease;
+}
+
+.diqa-roadmap__step::before {
+  content: "";
+  position: absolute;
+  top: -1.52rem;
+  left: 1rem;
+  width: 0.58rem;
+  height: 0.58rem;
+  border-radius: 50%;
+  border: 1px solid rgba(188, 167, 115, 0.45);
+  background: #11131a;
+}
+
+.diqa-roadmap__step.is-active {
+  transform: translateY(0) rotateX(0deg);
+  opacity: 1;
+  border-color: rgba(199, 177, 134, 0.6);
+}
+
+.diqa-roadmap__step.is-active::before {
+  background: #c7b186;
+  box-shadow: 0 0 0 4px rgba(199, 177, 134, 0.13);
+}
+
+.diqa-roadmap__phase {
+  margin: 0;
+  color: #bca773;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.diqa-roadmap__step-title {
+  margin: 0.55rem 0 0.45rem;
+  color: #f3ede0;
+  font-size: 1.12rem;
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: 500;
+}
+
+.diqa-roadmap__text {
+  margin: 0;
+  color: #cec7b8;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .diqa-roadmap__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .diqa-roadmap {
+    padding: 4rem 0;
+  }
+
+  .diqa-roadmap__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .diqa-roadmap__track,
+  .diqa-roadmap__progress {
+    display: none;
+  }
+
+  .diqa-roadmap__step {
+    opacity: 1;
+    transform: none;
+  }
+
+  .diqa-roadmap__step::before {
+    display: none;
+  }
+}

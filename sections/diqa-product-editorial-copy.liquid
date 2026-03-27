@@ -1,0 +1,89 @@
+{{ 'diqa-luxury-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-section">
+  <div class="page-width">
+    <div class="diqa-surface">
+      <p class="diqa-kicker">{{ section.settings.kicker }}</p>
+      <h2 class="diqa-heading">{{ product.title }}</h2>
+      <p class="diqa-copy">
+        {{ section.settings.intro }}
+      </p>
+
+      <div class="diqa-grid-3">
+        <article class="diqa-pill">
+          <h3>{{ section.settings.point_one_title }}</h3>
+          <p>{{ section.settings.point_one_text }}</p>
+        </article>
+        <article class="diqa-pill">
+          <h3>{{ section.settings.point_two_title }}</h3>
+          <p>{{ section.settings.point_two_text }}</p>
+        </article>
+        <article class="diqa-pill">
+          <h3>{{ section.settings.point_three_title }}</h3>
+          <p>{{ section.settings.point_three_text }}</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Product Story",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Product Story"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro",
+      "default": "A refined essential for the modern modest wardrobe. Crafted in premium fabric for a soft hand-feel and elegant drape."
+    },
+    {
+      "type": "text",
+      "id": "point_one_title",
+      "label": "Point 1 title",
+      "default": "Why it stands out"
+    },
+    {
+      "type": "textarea",
+      "id": "point_one_text",
+      "label": "Point 1 text",
+      "default": "Premium fabric, breathable comfort, and a smooth graceful fall with clean finishing details."
+    },
+    {
+      "type": "text",
+      "id": "point_two_title",
+      "label": "Point 2 title",
+      "default": "Fit & Feel"
+    },
+    {
+      "type": "textarea",
+      "id": "point_two_text",
+      "label": "Point 2 text",
+      "default": "Designed for ease and confidence with a balanced silhouette that feels polished all day."
+    },
+    {
+      "type": "text",
+      "id": "point_three_title",
+      "label": "Point 3 title",
+      "default": "Care"
+    },
+    {
+      "type": "textarea",
+      "id": "point_three_text",
+      "label": "Point 3 text",
+      "default": "Handle with care to preserve quality and finish. See our Fabric Care page for full guidance."
+    }
+  ],
+  "presets": [
+    {
+      "name": "DIQA Product Story"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,245 @@
+body {
+  background-color: #111518;
+  color: #ece7dc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f4efe4;
+}
+
+p,
+li,
+dd,
+dt,
+span,
+label,
+small {
+  color: #d4cec0;
+}
+
+a {
+  color: #d9d2c4;
+}
+
+a:hover {
+  color: #bca773;
+}
+
+main .rte,
+main .rte p,
+main .rte li,
+main .rte strong,
+main .rte em,
+main .shopify-policy__body,
+main .shopify-policy__body p,
+main .shopify-policy__body li,
+main .section-content-wrapper,
+main .section-content-wrapper p,
+main .section-content-wrapper li {
+  color: #d4cec0;
+}
+
+main .rte h1,
+main .rte h2,
+main .rte h3,
+main .rte h4,
+main .rte h5,
+main .rte h6 {
+  color: #f4efe4;
+}
+
+#header-group {
+  border-bottom: 1px solid rgba(188, 167, 115, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+#header-group a,
+#header-group button {
+  letter-spacing: 0.01em;
+}
+
+footer {
+  border-top: 1px solid rgba(188, 167, 115, 0.12);
+  background: linear-gradient(180deg, #111218, #0e0f13);
+}
+
+footer a {
+  color: #d9d2c4;
+}
+
+footer a:hover {
+  color: #bca773;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer p,
+footer span,
+footer label,
+footer small,
+footer li {
+  color: #d7d0c1;
+}
+
+footer .button,
+footer button,
+footer input[type='submit'] {
+  color: #f1ecdf;
+}
+
+footer [class*='newsletter'] h1,
+footer [class*='newsletter'] h2,
+footer [class*='newsletter'] h3,
+footer [class*='newsletter'] h4,
+footer [class*='newsletter'] p,
+footer [class*='newsletter'] span,
+footer [class*='newsletter'] label,
+footer [class*='newsletter'] a {
+  color: #d9d2c4 !important;
+}
+
+footer [class*='newsletter'] input,
+footer [class*='newsletter'] textarea {
+  background: #151821 !important;
+  color: #ece7dc !important;
+  border: 1px solid rgba(188, 167, 115, 0.28) !important;
+}
+
+footer [class*='newsletter'] input::placeholder {
+  color: #b9b09f !important;
+}
+
+.content-for-layout {
+  background: linear-gradient(180deg, #111518 0%, #171b1e 100%);
+}
+
+.button,
+button,
+input[type='submit'] {
+  border-radius: 0.3rem;
+}
+
+.button,
+button,
+input[type='submit'],
+input[type='button'] {
+  color: #ece7dc;
+}
+
+input,
+select,
+textarea {
+  background: #13151b;
+  color: #ece7dc;
+  border: 1px solid rgba(188, 167, 115, 0.22);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9f9787;
+}
+
+summary {
+  color: #f0eadc;
+}
+
+hr {
+  border-color: rgba(188, 167, 115, 0.2);
+}
+
+main[data-template*='product'] .card,
+main[data-template*='product'] .shopify-payment-button,
+main[data-template*='product'] .shopify-payment-button__button--unbranded,
+main[data-template*='product'] .shopify-payment-button__button--branded,
+main[data-template*='product'] .quantity,
+main[data-template*='product'] .product-form__input,
+main[data-template*='product'] .product__media,
+main[data-template*='product'] [class*='product-card'] {
+  background-color: #13151b;
+  border-color: rgba(188, 167, 115, 0.22);
+}
+
+/* Fix dark text on dark backgrounds in collection/search pages */
+main[data-template*='collection'] h1,
+main[data-template*='collection'] h2,
+main[data-template*='collection'] h3,
+main[data-template*='collection'] p,
+main[data-template*='collection'] span,
+main[data-template*='collection'] a,
+main[data-template*='collection'] button,
+main[data-template*='collection'] label,
+main[data-template*='collection'] summary,
+main[data-template*='search'] h1,
+main[data-template*='search'] h2,
+main[data-template*='search'] h3,
+main[data-template*='search'] p,
+main[data-template*='search'] span,
+main[data-template*='search'] a,
+main[data-template*='search'] button,
+main[data-template*='search'] label,
+main[data-template*='search'] summary {
+  color: #ece7dc;
+}
+
+main[data-template*='collection'] [class*='empty'],
+main[data-template*='collection'] [class*='no-results'],
+main[data-template*='collection'] [class*='result'],
+main[data-template*='search'] [class*='empty'],
+main[data-template*='search'] [class*='no-results'],
+main[data-template*='search'] [class*='result'] {
+  color: #e8e2d4;
+}
+
+main[data-template*='collection'] input,
+main[data-template*='collection'] select,
+main[data-template*='collection'] textarea,
+main[data-template*='search'] input,
+main[data-template*='search'] select,
+main[data-template*='search'] textarea,
+footer input,
+footer textarea {
+  color: #ece7dc;
+}
+
+main[data-template*='collection'] input::placeholder,
+main[data-template*='search'] input::placeholder,
+footer input::placeholder {
+  color: #b8b0a1;
+}
+
+/* Collection/product card media should not show light blocks */
+main[data-template*='collection'] .card,
+main[data-template*='collection'] .card__content,
+main[data-template*='collection'] .card__media,
+main[data-template*='collection'] .media,
+main[data-template*='collection'] .product-card,
+main[data-template*='collection'] [class*='product-card'],
+main[data-template*='collection'] [class*='gallery'] {
+  background: #11131a;
+  border-color: rgba(188, 167, 115, 0.2);
+}
+
+main[data-template*='collection'] .card__media,
+main[data-template*='collection'] .media {
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+main[data-template*='collection'] .placeholder-svg,
+main[data-template*='collection'] .placeholder-svg-placeholder {
+  background: #11131a;
+  color: #3a3f4a;
+  fill: #3a3f4a;
+}
+
+main[data-template*='collection'] .card img,
+main[data-template*='collection'] .media img {
+  background: #11131a;
+}

@@ -1,0 +1,131 @@
+{{ 'diqa-luxury-3d.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'diqa-luxury-3d.js' | asset_url }}" defer></script>
+
+<section
+  class="diqa-luxury"
+  data-diqa-luxury
+  style="
+    --diqa-bg-start: {{ section.settings.bg_start }};
+    --diqa-bg-end: {{ section.settings.bg_end }};
+    --diqa-accent: {{ section.settings.accent_color }};
+    --diqa-text: {{ section.settings.text_color }};
+  "
+>
+  <div class="diqa-luxury__glow" aria-hidden="true"></div>
+  <canvas class="diqa-luxury__canvas" aria-hidden="true"></canvas>
+
+  <div class="diqa-luxury__container page-width">
+    <div class="diqa-luxury__content">
+      <p class="diqa-luxury__eyebrow">{{ section.settings.eyebrow }}</p>
+      <h1 class="diqa-luxury__title">{{ section.settings.title }}</h1>
+      <p class="diqa-luxury__subtitle">{{ section.settings.subtitle }}</p>
+
+      <div class="diqa-luxury__actions">
+        {% if section.settings.primary_label != blank %}
+          <a class="button button-primary diqa-btn" href="{{ section.settings.primary_link | default: routes.all_products_collection_url }}">
+            {{ section.settings.primary_label }}
+          </a>
+        {% endif %}
+
+        {% if section.settings.secondary_label != blank %}
+          <a class="button button-secondary diqa-btn diqa-btn--secondary" href="{{ section.settings.secondary_link | default: routes.collections_url }}">
+            {{ section.settings.secondary_label }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="diqa-luxury__visual" data-diqa-tilt>
+      <div class="diqa-card">
+        <p class="diqa-card__label">DIQA Signature</p>
+        <p class="diqa-card__value">{{ section.settings.card_text }}</p>
+      </div>
+      <div class="diqa-orb diqa-orb--one" aria-hidden="true"></div>
+      <div class="diqa-orb diqa-orb--two" aria-hidden="true"></div>
+      <div class="diqa-grid" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Luxury 3D",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Luxury Craftsmanship"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "DIQA"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Exclusive essentials, refined in detail, crafted for a premium lifestyle."
+    },
+    {
+      "type": "text",
+      "id": "primary_label",
+      "label": "Primary button label",
+      "default": "Shop Collection"
+    },
+    {
+      "type": "url",
+      "id": "primary_link",
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_label",
+      "label": "Secondary button label",
+      "default": "Discover Brand"
+    },
+    {
+      "type": "url",
+      "id": "secondary_link",
+      "label": "Secondary button link"
+    },
+    {
+      "type": "text",
+      "id": "card_text",
+      "label": "3D card text",
+      "default": "Limited Edition"
+    },
+    {
+      "type": "color",
+      "id": "bg_start",
+      "label": "Background start",
+      "default": "#0b0b10"
+    },
+    {
+      "type": "color",
+      "id": "bg_end",
+      "label": "Background end",
+      "default": "#16161f"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#d4af37"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#f8f5ee"
+    }
+  ],
+  "presets": [
+    {
+      "name": "DIQA Luxury 3D"
+    }
+  ]
+}
+{% endschema %}

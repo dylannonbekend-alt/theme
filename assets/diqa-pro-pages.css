@@ -1,0 +1,152 @@
+.diqa-page-hero {
+  padding: 4.5rem 0 2rem;
+}
+
+.diqa-page-hero__inner {
+  border: 1px solid rgba(188, 167, 115, 0.2);
+  border-radius: 0.4rem;
+  background: linear-gradient(165deg, #121319, #0f1014);
+  padding: clamp(1.2rem, 4vw, 2.4rem);
+}
+
+.diqa-page-hero__kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: #bca773;
+}
+
+.diqa-page-hero__title {
+  margin: 0.7rem 0 0.6rem;
+  color: #f4efe4;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: clamp(1.9rem, 4.2vw, 3.1rem);
+  font-weight: 500;
+}
+
+.diqa-page-hero__copy {
+  margin: 0;
+  color: #d0c9ba;
+  max-width: 72ch;
+}
+
+.diqa-pro-stack {
+  padding: 1.25rem 0 4rem;
+}
+
+.diqa-pro-card {
+  border: 1px solid rgba(188, 167, 115, 0.2);
+  background: linear-gradient(170deg, #121319, #101117);
+  border-radius: 0.35rem;
+  padding: 1rem;
+}
+
+.diqa-pro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.diqa-pro-card h3 {
+  margin: 0 0 0.45rem;
+  color: #f1ebde;
+  font-size: 1.06rem;
+}
+
+.diqa-pro-card p {
+  margin: 0;
+  color: #cdc6b8;
+}
+
+.diqa-newsletter {
+  padding: 2rem 0 4rem;
+}
+
+.diqa-newsletter__box {
+  border: 1px solid rgba(188, 167, 115, 0.24);
+  border-radius: 0.4rem;
+  background: linear-gradient(160deg, #121319, #101117);
+  padding: clamp(1rem, 3vw, 1.8rem);
+}
+
+.diqa-newsletter__box .diqa-page-hero__kicker {
+  color: #c6b186;
+}
+
+.diqa-newsletter__box .diqa-page-hero__title {
+  color: #f4efe3;
+}
+
+.diqa-newsletter__box .diqa-page-hero__copy {
+  color: #d2cabc;
+}
+
+.diqa-newsletter__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.8rem;
+  align-items: end;
+}
+
+.diqa-newsletter input[type='email'] {
+  min-height: 2.8rem;
+  background: #151820;
+  color: #ece7dc;
+  border: 1px solid rgba(188, 167, 115, 0.26);
+}
+
+.diqa-newsletter input[type='email']::placeholder {
+  color: #b7af9e;
+}
+
+.diqa-newsletter__row .button {
+  min-height: 2.8rem;
+  background: #0f1218;
+  border: 1px solid rgba(188, 167, 115, 0.34);
+  color: #f0eadc !important;
+}
+
+.diqa-newsletter__row .button:hover {
+  border-color: rgba(188, 167, 115, 0.6);
+  color: #f7f1e3 !important;
+}
+
+.diqa-policy-links {
+  padding: 1.5rem 0 4rem;
+}
+
+.diqa-policy-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.diqa-policy-links a {
+  display: block;
+  border: 1px solid rgba(188, 167, 115, 0.2);
+  border-radius: 0.3rem;
+  padding: 0.8rem 0.9rem;
+  text-decoration: none;
+  color: #ddd5c6;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.diqa-policy-links a:hover {
+  border-color: rgba(188, 167, 115, 0.44);
+  color: #bca773;
+}
+
+@media screen and (max-width: 989px) {
+  .diqa-pro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .diqa-newsletter__row,
+  .diqa-policy-links ul {
+    grid-template-columns: 1fr;
+  }
+}

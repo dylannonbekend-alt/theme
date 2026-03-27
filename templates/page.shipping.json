@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "hero": {
+      "type": "diqa-page-hero",
+      "settings": {
+        "kicker": "Shipping",
+        "title": "Premium delivery, clearly explained",
+        "copy": "Find delivery zones, estimated timelines and order tracking information for DIQA orders."
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h2>{{ closest.page.title }}</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "content_shipping": {
+          "type": "text",
+          "name": "Shipping Content",
+          "settings": {
+            "text": "<p>We verwerken bestellingen op werkdagen binnen 24 uur.</p><p><strong>Levertijd</strong><br>Benelux: 1-3 werkdagen<br>Europa: 3-7 werkdagen</p><p><strong>Tracking</strong><br>Zodra je bestelling is verzonden ontvang je een track & trace per e-mail.</p><p><strong>Belangrijk</strong><br>Tijdens launches of feestdagen kan levering iets langer duren.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["heading", "content_shipping"],
+      "settings": {
+        "content_direction": "column",
+        "gap": 24,
+        "color_scheme": "",
+        "padding-block-start": 12,
+        "padding-block-end": 8
+      }
+    }
+  },
+  "order": ["hero", "main"]
+}

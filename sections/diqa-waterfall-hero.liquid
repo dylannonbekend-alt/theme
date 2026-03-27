@@ -1,0 +1,71 @@
+{{ 'diqa-waterfall-hero.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'diqa-waterfall-hero.js' | asset_url }}" defer></script>
+
+<section
+  class="diqa-waterfall"
+  data-diqa-waterfall
+  style="
+    --diqa-waterfall-start: {{ section.settings.bg_start }};
+    --diqa-waterfall-end: {{ section.settings.bg_end }};
+    --diqa-waterfall-accent: {{ section.settings.accent }};
+    --diqa-waterfall-text: {{ section.settings.text_color }};
+  "
+>
+  <canvas class="diqa-waterfall__canvas" aria-hidden="true"></canvas>
+  <div class="diqa-waterfall__veil" aria-hidden="true"></div>
+
+  <div class="diqa-waterfall__inner page-width">
+    <div class="diqa-waterfall__content">
+      <p class="diqa-waterfall__kicker">{{ section.settings.kicker | default: 'Ritual of Elegance' }}</p>
+      <h1 class="diqa-waterfall__title">{{ section.settings.title | default: 'Luxury in motion, calm in presence.' }}</h1>
+      <p class="diqa-waterfall__copy">{{ section.settings.copy | default: 'A refined visual experience inspired by flowing water. Crafted for women who choose quiet confidence.' }}</p>
+      <div class="diqa-waterfall__actions">
+        {% assign primary_href = section.settings.primary_link | default: routes.collections_url %}
+        {% assign secondary_href = section.settings.secondary_link | default: '' %}
+
+        <a class="button button-primary" href="{{ primary_href }}">
+          {{ section.settings.primary_label | default: 'Discover Collection' }}
+        </a>
+
+        {% if secondary_href != blank and secondary_href != primary_href %}
+          <a class="button button-secondary" href="{{ secondary_href }}">
+            {{ section.settings.secondary_label | default: 'Explore Story' }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="diqa-waterfall__panel" data-waterfall-tilt>
+      <p class="diqa-waterfall__panel-kicker">{{ section.settings.panel_kicker }}</p>
+      <p class="diqa-waterfall__panel-text">{{ section.settings.panel_text }}</p>
+      <span class="diqa-waterfall__panel-line" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Waterfall Hero",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Ritual of Elegance" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Luxury in motion, calm in presence." },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Copy",
+      "default": "A refined visual experience inspired by flowing water. Crafted for women who choose quiet confidence."
+    },
+    { "type": "text", "id": "primary_label", "label": "Primary label", "default": "Discover Collection" },
+    { "type": "url", "id": "primary_link", "label": "Primary link" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary label", "default": "Explore Story" },
+    { "type": "url", "id": "secondary_link", "label": "Secondary link" },
+    { "type": "text", "id": "panel_kicker", "label": "Panel kicker", "default": "DIQA Signature" },
+    { "type": "textarea", "id": "panel_text", "label": "Panel text", "default": "Premium fabrics, serene tones, and timeless modest silhouettes." },
+    { "type": "color", "id": "bg_start", "label": "Background start", "default": "#0d1113" },
+    { "type": "color", "id": "bg_end", "label": "Background end", "default": "#161b1d" },
+    { "type": "color", "id": "accent", "label": "Accent", "default": "#bca773" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#f1ecdf" }
+  ],
+  "presets": [{ "name": "DIQA Waterfall Hero" }]
+}
+{% endschema %}

@@ -1,0 +1,106 @@
+.diqa-section {
+  padding: 5rem 0;
+}
+
+.diqa-surface {
+  background: linear-gradient(168deg, #121318, #0f1014);
+  border: 1px solid rgba(187, 170, 128, 0.2);
+  border-radius: 0.4rem;
+  padding: clamp(1.2rem, 4vw, 2.4rem);
+  color: #f7f4ed;
+}
+
+.diqa-surface a {
+  color: #d8cfba;
+}
+
+.diqa-surface a:hover {
+  color: #bca773;
+}
+
+.diqa-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  color: #bca773;
+}
+
+.diqa-heading {
+  margin: 0.75rem 0 0.85rem;
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  font-family: "Times New Roman", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+.diqa-copy {
+  margin: 0;
+  max-width: 62ch;
+  color: #cbc7be;
+}
+
+.diqa-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.diqa-pill {
+  border: 1px solid rgba(188, 167, 115, 0.24);
+  border-radius: 0.35rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.diqa-pill h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.diqa-pill p {
+  margin: 0;
+  color: #c8c4ba;
+}
+
+.diqa-pill summary {
+  color: #f1ebde;
+  cursor: pointer;
+}
+
+.diqa-quotes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.diqa-quote {
+  border-left: 2px solid #bca773;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.015);
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.diqa-quote p {
+  margin: 0;
+  color: #d7d4cb;
+}
+
+.diqa-quote strong {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: #f5f2ea;
+}
+
+@media screen and (max-width: 989px) {
+  .diqa-grid-3,
+  .diqa-quotes {
+    grid-template-columns: 1fr;
+  }
+
+  .diqa-section {
+    padding: 3.5rem 0;
+  }
+}

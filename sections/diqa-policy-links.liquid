@@ -1,0 +1,33 @@
+{{ 'diqa-pro-pages.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-policy-links">
+  <div class="page-width">
+    <p class="diqa-page-hero__kicker">{{ section.settings.kicker }}</p>
+    <h2 class="diqa-page-hero__title" style="margin-top: 0.55rem;">{{ section.settings.heading }}</h2>
+    <ul>
+      <li><a href="{{ section.settings.link_one_url }}">{{ section.settings.link_one_label }}</a></li>
+      <li><a href="{{ section.settings.link_two_url }}">{{ section.settings.link_two_label }}</a></li>
+      <li><a href="{{ section.settings.link_three_url }}">{{ section.settings.link_three_label }}</a></li>
+      <li><a href="{{ section.settings.link_four_url }}">{{ section.settings.link_four_label }}</a></li>
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Policy Links",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Information" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Everything you need to know" },
+    { "type": "text", "id": "link_one_label", "label": "Link 1 label", "default": "Shipping Policy" },
+    { "type": "url", "id": "link_one_url", "label": "Link 1 URL" },
+    { "type": "text", "id": "link_two_label", "label": "Link 2 label", "default": "Returns & Exchanges" },
+    { "type": "url", "id": "link_two_url", "label": "Link 2 URL" },
+    { "type": "text", "id": "link_three_label", "label": "Link 3 label", "default": "Size Guide" },
+    { "type": "url", "id": "link_three_url", "label": "Link 3 URL" },
+    { "type": "text", "id": "link_four_label", "label": "Link 4 label", "default": "Fabric Care" },
+    { "type": "url", "id": "link_four_url", "label": "Link 4 URL" }
+  ],
+  "presets": [{ "name": "DIQA Policy Links" }]
+}
+{% endschema %}

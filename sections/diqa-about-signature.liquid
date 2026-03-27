@@ -1,0 +1,67 @@
+{{ 'diqa-luxury-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-section">
+  <div class="page-width">
+    <div class="diqa-surface">
+      <p class="diqa-kicker">{{ section.settings.kicker }}</p>
+      <h2 class="diqa-heading">{{ section.settings.heading }}</h2>
+      <p class="diqa-copy">{{ section.settings.copy }}</p>
+
+      <div class="diqa-grid-3">
+        {% for block in section.blocks %}
+          <article class="diqa-pill" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA About Signature",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "About DIQA"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Quiet luxury with character"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Text",
+      "default": "DIQA was built around timeless design, restrained detail, and premium quality you can feel."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Point",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Materials first" },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "A considered material selection with a focus on durability and tactile quality."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "DIQA About Signature"
+    }
+  ]
+}
+{% endschema %}

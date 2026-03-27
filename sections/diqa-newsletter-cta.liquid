@@ -1,0 +1,45 @@
+{{ 'diqa-pro-pages.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-newsletter">
+  <div class="page-width">
+    <div class="diqa-newsletter__box">
+      <p class="diqa-page-hero__kicker">{{ section.settings.kicker }}</p>
+      <h2 class="diqa-page-hero__title" style="margin-top: 0.55rem;">{{ section.settings.heading }}</h2>
+      <p class="diqa-page-hero__copy">{{ section.settings.copy }}</p>
+
+      {% form 'customer', class: 'diqa-newsletter__row' %}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div>
+          <label for="DiqaNewsletterEmail" class="visually-hidden">Email</label>
+          <input
+            id="DiqaNewsletterEmail"
+            type="email"
+            name="contact[email]"
+            placeholder="{{ section.settings.placeholder }}"
+            required
+          >
+        </div>
+        <button type="submit" class="button button-primary">{{ section.settings.button_label }}</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Newsletter CTA",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Private Access" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Receive exclusive drops and early access" },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Text",
+      "default": "Join the DIQA list for premium launches, private offers and styling updates."
+    },
+    { "type": "text", "id": "placeholder", "label": "Email placeholder", "default": "Enter your email" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Join list" }
+  ],
+  "presets": [{ "name": "DIQA Newsletter CTA" }]
+}
+{% endschema %}

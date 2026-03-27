@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "hero": {
+      "type": "diqa-page-hero",
+      "settings": {
+        "kicker": "Fabric Care",
+        "title": "Care instructions for premium fabrics",
+        "copy": "Share washing, steaming, storage and handling recommendations to maintain quality over time."
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h2>{{ closest.page.title }}</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "content_care": {
+          "type": "text",
+          "name": "Fabric Care Content",
+          "settings": {
+            "text": "<p>Onze stoffen zijn premium en vragen om zachte verzorging.</p><p><strong>Wassen</strong><br>Handwas of fijnwasprogramma op lage temperatuur.<br>Gebruik een mild wasmiddel.</p><p><strong>Drogen</strong><br>Liggend of hangend laten drogen. Vermijd de droger.</p><p><strong>Strijken/Steam</strong><br>Gebruik lage hitte of stoom voor een nette, vloeiende finish.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["heading", "content_care"],
+      "settings": {
+        "content_direction": "column",
+        "gap": 24,
+        "color_scheme": "",
+        "padding-block-start": 12,
+        "padding-block-end": 8
+      }
+    }
+  },
+  "order": ["hero", "main"]
+}

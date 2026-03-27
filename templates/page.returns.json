@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "hero": {
+      "type": "diqa-page-hero",
+      "settings": {
+        "kicker": "Returns",
+        "title": "Simple returns and exchanges",
+        "copy": "Understand return windows, conditions and the step-by-step exchange process."
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h2>{{ closest.page.title }}</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "content_returns": {
+          "type": "text",
+          "name": "Returns Content",
+          "settings": {
+            "text": "<p>Niet helemaal tevreden? Je kunt een retour aanvragen binnen 14 dagen na ontvangst.</p><p><strong>Retourvoorwaarden</strong><br>Item ongedragen, ongewassen en in originele staat.<br>Labels moeten bevestigd zijn.</p><p><strong>Ruilen</strong><br>Ruilen voor maat of kleur is mogelijk op basis van voorraad.</p><p><strong>Retourproces</strong><br>Stuur ons een e-mail met je ordernummer, dan helpen we je direct verder.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["heading", "content_returns"],
+      "settings": {
+        "content_direction": "column",
+        "gap": 24,
+        "color_scheme": "",
+        "padding-block-start": 12,
+        "padding-block-end": 8
+      }
+    }
+  },
+  "order": ["hero", "main"]
+}

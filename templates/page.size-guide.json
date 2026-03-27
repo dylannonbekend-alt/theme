@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "hero": {
+      "type": "diqa-page-hero",
+      "settings": {
+        "kicker": "Size Guide",
+        "title": "Find your perfect Abaya and Hijab fit",
+        "copy": "Use this page to explain measurements, fit notes and styling recommendations per collection."
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h2>{{ closest.page.title }}</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "content_size": {
+          "type": "text",
+          "name": "Size Guide Content",
+          "settings": {
+            "text": "<p>Onze fits zijn ontworpen voor elegantie, comfort en een mooie valling.</p><p><strong>Abaya</strong><br>Kies je maat op basis van lengte en gewenste pasvorm (regular of relaxed).</p><p><strong>Hijab</strong><br>Onze hijabs hebben een standaard maat met voldoende lengte voor diverse styling-opties.</p><p><strong>Twijfel je?</strong><br>Stuur ons je lengte en gewenste fit, dan adviseren we de beste maat.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["heading", "content_size"],
+      "settings": {
+        "content_direction": "column",
+        "gap": 24,
+        "color_scheme": "",
+        "padding-block-start": 12,
+        "padding-block-end": 8
+      }
+    }
+  },
+  "order": ["hero", "main"]
+}

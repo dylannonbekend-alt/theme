@@ -1,0 +1,65 @@
+{{ 'diqa-immersive-showcase.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'diqa-immersive-showcase.js' | asset_url }}" defer></script>
+
+<section
+  class="diqa-immersive"
+  data-diqa-immersive
+  style="
+    --diqa-immersive-bg-start: {{ section.settings.bg_start }};
+    --diqa-immersive-bg-end: {{ section.settings.bg_end }};
+    --diqa-immersive-accent: {{ section.settings.accent }};
+  "
+>
+  <canvas class="diqa-immersive__canvas" aria-hidden="true"></canvas>
+
+  <div class="page-width diqa-immersive__inner">
+    <div class="diqa-immersive__content">
+      <p class="diqa-immersive__kicker">{{ section.settings.kicker }}</p>
+      <h2 class="diqa-immersive__title">{{ section.settings.title }}</h2>
+      <p class="diqa-immersive__copy">{{ section.settings.copy }}</p>
+    </div>
+
+    <div class="diqa-immersive__layers" data-immersive-tilt>
+      <article class="diqa-immersive-card diqa-immersive-card--front">
+        <p class="diqa-immersive-card__label">{{ section.settings.card_one_label }}</p>
+        <p class="diqa-immersive-card__text">{{ section.settings.card_one_text }}</p>
+      </article>
+      <article class="diqa-immersive-card diqa-immersive-card--mid">
+        <p class="diqa-immersive-card__label">{{ section.settings.card_two_label }}</p>
+        <p class="diqa-immersive-card__text">{{ section.settings.card_two_text }}</p>
+      </article>
+      <article class="diqa-immersive-card diqa-immersive-card--back">
+        <p class="diqa-immersive-card__label">{{ section.settings.card_three_label }}</p>
+        <p class="diqa-immersive-card__text">{{ section.settings.card_three_text }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Immersive 3D",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Immersive Experience" },
+    { "type": "text", "id": "title", "label": "Title", "default": "A cinematic layer of modest luxury." },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Copy",
+      "default": "Depth, texture and movement inspired by premium fabric flow. A more sensory way to discover DIQA."
+    },
+    { "type": "text", "id": "card_one_label", "label": "Card 1 label", "default": "Abaya" },
+    { "type": "textarea", "id": "card_one_text", "label": "Card 1 text", "default": "Fluid silhouettes with controlled structure." },
+    { "type": "text", "id": "card_two_label", "label": "Card 2 label", "default": "Hijab" },
+    { "type": "textarea", "id": "card_two_text", "label": "Card 2 text", "default": "Soft fall, elevated comfort, timeless elegance." },
+    { "type": "text", "id": "card_three_label", "label": "Card 3 label", "default": "Fabric" },
+    { "type": "textarea", "id": "card_three_text", "label": "Card 3 text", "default": "Selected for touch, movement and lasting quality." },
+    { "type": "color", "id": "bg_start", "label": "Background start", "default": "#0b0f11" },
+    { "type": "color", "id": "bg_end", "label": "Background end", "default": "#171c1f" },
+    { "type": "color", "id": "accent", "label": "Accent", "default": "#bca773" }
+  ],
+  "presets": [
+    { "name": "DIQA Immersive 3D" }
+  ]
+}
+{% endschema %}

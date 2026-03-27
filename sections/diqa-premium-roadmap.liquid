@@ -1,0 +1,117 @@
+{{ 'diqa-premium-roadmap.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'diqa-premium-roadmap.js' | asset_url }}" defer></script>
+
+<section class="diqa-roadmap" data-diqa-roadmap>
+  <div class="page-width">
+    <div class="diqa-roadmap__intro">
+      <p class="diqa-roadmap__kicker">{{ section.settings.kicker }}</p>
+      <h2 class="diqa-roadmap__title">{{ section.settings.title }}</h2>
+      <p class="diqa-roadmap__copy">{{ section.settings.copy }}</p>
+    </div>
+
+    <div class="diqa-roadmap__track" aria-hidden="true"></div>
+    <div class="diqa-roadmap__progress" aria-hidden="true" data-roadmap-progress></div>
+
+    <div class="diqa-roadmap__steps">
+      {% for block in section.blocks %}
+        <article class="diqa-roadmap__step" data-roadmap-step {{ block.shopify_attributes }}>
+          <p class="diqa-roadmap__phase">{{ block.settings.phase }}</p>
+          <h3 class="diqa-roadmap__step-title">{{ block.settings.heading }}</h3>
+          <p class="diqa-roadmap__text">{{ block.settings.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Premium Roadmap",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Craft Process"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "From premium fabric to refined Abaya and Hijab"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Text",
+      "default": "A calm visual roadmap of how each DIQA piece is selected, finished and delivered with premium quality standards."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "phase",
+          "label": "Phase",
+          "default": "01"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Fabric Selection"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "We source premium breathable fabrics with elegant drape, soft touch and long-term comfort."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "DIQA Premium Roadmap",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "phase": "01",
+            "heading": "Fabric Selection",
+            "text": "We source premium breathable fabrics with elegant drape, soft touch and long-term comfort."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "phase": "02",
+            "heading": "Design Refinement",
+            "text": "Abaya and Hijab silhouettes are refined for modest luxury, balanced lines and timeless elegance."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "phase": "03",
+            "heading": "Quality Finishing",
+            "text": "Each piece is checked for stitching precision, fall, opacity and premium finishing details."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "phase": "04",
+            "heading": "Presentation",
+            "text": "Your order is prepared in a clean, elegant presentation that reflects DIQA's premium identity."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

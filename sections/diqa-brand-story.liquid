@@ -1,0 +1,95 @@
+{{ 'diqa-luxury-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-section">
+  <div class="page-width">
+    <div class="diqa-surface">
+      <p class="diqa-kicker">{{ section.settings.kicker }}</p>
+      <h2 class="diqa-heading">{{ section.settings.heading }}</h2>
+      <p class="diqa-copy">{{ section.settings.copy }}</p>
+
+      <div class="diqa-grid-3">
+        {% for block in section.blocks %}
+          <article class="diqa-pill" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.copy }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Brand Story",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Our Signature"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A modern luxury identity"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Text",
+      "default": "DIQA combines premium materials, timeless silhouettes, and detailed finishing to elevate your daily essentials."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Pillar",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Premium materials"
+        },
+        {
+          "type": "textarea",
+          "id": "copy",
+          "label": "Text",
+          "default": "Carefully selected finishes and textures with a refined, durable touch."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "DIQA Brand Story",
+      "blocks": [
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Premium materials",
+            "copy": "Carefully selected finishes and textures with a refined, durable touch."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Minimal elegance",
+            "copy": "Design language focused on confidence, simplicity, and premium visual balance."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "Exclusive drops",
+            "copy": "Limited releases and curated collections to keep the brand experience distinctive."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
