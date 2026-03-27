@@ -54,51 +54,36 @@
           <p class="diqa-waterfall__panel-kicker">{{ section.settings.panel_kicker }}</p>
           <p class="diqa-waterfall__panel-text">{{ section.settings.panel_text }}</p>
 
-          <div class="diqa-waterfall__topic-tabs" data-waterfall-topics>
-            <button
-              type="button"
+          <div class="diqa-waterfall__topic-tabs">
+            <a
               class="diqa-waterfall__topic-tab is-active"
-              data-topic-title="{{ section.settings.topic_one_label }}"
-              data-topic-text="{{ section.settings.topic_one_text }}"
-              data-topic-link="{{ section.settings.topic_one_link }}"
+              href="{{ section.settings.topic_one_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_one_label }}
-            </button>
-            <button
-              type="button"
+            </a>
+            <a
               class="diqa-waterfall__topic-tab"
-              data-topic-title="{{ section.settings.topic_two_label }}"
-              data-topic-text="{{ section.settings.topic_two_text }}"
-              data-topic-link="{{ section.settings.topic_two_link }}"
+              href="{{ section.settings.topic_two_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_two_label }}
-            </button>
-            <button
-              type="button"
+            </a>
+            <a
               class="diqa-waterfall__topic-tab"
-              data-topic-title="{{ section.settings.topic_three_label }}"
-              data-topic-text="{{ section.settings.topic_three_text }}"
-              data-topic-link="{{ section.settings.topic_three_link }}"
+              href="{{ section.settings.topic_three_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_three_label }}
-            </button>
+            </a>
           </div>
 
           <div class="diqa-waterfall__topic-content">
-            <p class="diqa-waterfall__topic-title" data-waterfall-topic-title>{{ section.settings.topic_one_label }}</p>
-            <p class="diqa-waterfall__topic-copy" data-waterfall-topic-text>{{ section.settings.topic_one_text }}</p>
+            <p class="diqa-waterfall__topic-title">{{ section.settings.topic_one_label }}</p>
+            <p class="diqa-waterfall__topic-copy">{{ section.settings.topic_one_text }}</p>
             <a
               class="diqa-waterfall__topic-link"
-              data-waterfall-topic-link
               href="{{ section.settings.topic_one_link | default: routes.collections_url }}"
             >
               {{ section.settings.topic_cta_label }}
             </a>
-            <div class="diqa-waterfall__topic-meta">
-              <span>{{ section.settings.meta_one }}</span>
-              <span>{{ section.settings.meta_two }}</span>
-              <span>{{ section.settings.meta_three }}</span>
-            </div>
           </div>
           <span class="diqa-waterfall__panel-line" aria-hidden="true"></span>
         </article>

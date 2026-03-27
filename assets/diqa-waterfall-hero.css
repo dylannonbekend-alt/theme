@@ -267,6 +267,7 @@
   padding: 0.22rem 0.62rem;
   font-size: 0.72rem;
   cursor: pointer;
+  text-decoration: none;
   position: relative;
   z-index: 3;
 }
@@ -305,22 +306,6 @@
   position: relative;
   z-index: 3;
   cursor: pointer;
-}
-
-.diqa-waterfall__topic-meta {
-  margin-top: 0.55rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.diqa-waterfall__topic-meta span {
-  border: 1px solid rgba(164, 136, 92, 0.24);
-  background: rgba(255, 252, 246, 0.72);
-  border-radius: 999px;
-  padding: 0.15rem 0.45rem;
-  color: #6b5941;
-  font-size: 0.7rem;
 }
 
 .diqa-waterfall__panel-line {

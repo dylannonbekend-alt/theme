@@ -36,35 +36,6 @@
     });
   }
 
-  function setupTopicTabs(section) {
-    var tabs = Array.prototype.slice.call(section.querySelectorAll('.diqa-waterfall__topic-tab'));
-    if (!tabs.length) return;
-
-    var titleEl = section.querySelector('[data-waterfall-topic-title]');
-    var textEl = section.querySelector('[data-waterfall-topic-text]');
-    var linkEl = section.querySelector('[data-waterfall-topic-link]');
-
-    function activate(tab) {
-      tabs.forEach(function (t) {
-        t.classList.toggle('is-active', t === tab);
-      });
-
-      if (titleEl) titleEl.textContent = tab.getAttribute('data-topic-title') || '';
-      if (textEl) textEl.textContent = tab.getAttribute('data-topic-text') || '';
-      if (linkEl) {
-        var href = tab.getAttribute('data-topic-link') || '/collections/all';
-        linkEl.hidden = false;
-        linkEl.setAttribute('href', href);
-      }
-    }
-
-    tabs.forEach(function (tab) {
-      tab.addEventListener('click', function () {
-        activate(tab);
-      });
-    });
-  }
-
   function setupWaterfall(section) {
     var canvas = section.querySelector('.diqa-waterfall__canvas');
     if (!canvas) return;
@@ -157,7 +128,6 @@
     document.querySelectorAll('[data-diqa-waterfall]').forEach(function (section) {
       setupTilt(section);
       setupWaterfall(section);
-      setupTopicTabs(section);
     });
   }
 
