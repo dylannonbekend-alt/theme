@@ -365,8 +365,8 @@
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 6,
-        "columns": 3,
+        "max_products": 8,
+        "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 16,
@@ -377,17 +377,17 @@
         "horizontal_alignment": "flex-start",
         "gap": 32,
         "color_scheme": "scheme-1",
-        "padding-block-start": 32,
-        "padding-block-end": 64
+        "padding-block-start": 12,
+        "padding-block-end": 40
       }
     }
   },
   "order": [
+    "product_list_fa6P9H",
     "diqa_waterfall_hero_A1b9",
     "diqa_service_strip_pro_a29",
     "diqa_brand_story_7Wq2Az",
     "diqa_collection_intro_home_L9s2",
-    "product_list_fa6P9H",
     "diqa_immersive_showcase_r8T2",
     "diqa_testimonials_U2asEf"
   ]
