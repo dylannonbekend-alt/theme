@@ -11,18 +11,18 @@
     "diqa_immersive_showcase_r8T2": {
       "type": "diqa-immersive-showcase",
       "settings": {
-        "kicker": "Immersive Experience",
-        "title": "A cinematic layer of modest luxury.",
-        "copy": "Depth, texture and movement inspired by premium fabric flow. A more sensory way to discover DIQA.",
+        "kicker": "Signature Layers",
+        "title": "A softer expression of modern luxury.",
+        "copy": "Layered depth and subtle movement inspired by premium drape. Editorial, calm and intentionally minimal.",
         "card_one_label": "Abaya",
-        "card_one_text": "Fluid silhouettes with controlled structure.",
+        "card_one_text": "Fluid silhouettes with a graceful line.",
         "card_two_label": "Hijab",
-        "card_two_text": "Soft fall, elevated comfort, timeless elegance.",
+        "card_two_text": "Soft fall, breathable comfort, timeless elegance.",
         "card_three_label": "Fabric",
-        "card_three_text": "Selected for touch, movement and lasting quality.",
-        "bg_start": "#0b0f11",
-        "bg_end": "#171c1f",
-        "accent": "#bca773"
+        "card_three_text": "Chosen for touch, movement and lasting quality.",
+        "bg_start": "#f8f2e8",
+        "bg_end": "#eee2d1",
+        "accent": "#a7834e"
       }
     },
     "diqa_waterfall_hero_A1b9": {
@@ -37,10 +37,46 @@
         "secondary_link": "/pages/about",
         "panel_kicker": "DIQA Signature",
         "panel_text": "Premium fabrics, serene tones, and timeless modest silhouettes.",
-        "bg_start": "#0d1113",
-        "bg_end": "#161b1d",
-        "accent": "#bca773",
-        "text_color": "#f1ecdf"
+        "bg_start": "#f9f4eb",
+        "bg_end": "#efe5d5",
+        "accent": "#a7834e",
+        "text_color": "#2b241d"
+      }
+    },
+    "diqa_collection_intro_home_L9s2": {
+      "type": "diqa-collection-intro",
+      "blocks": {
+        "category_abaya": {
+          "type": "category",
+          "settings": {
+            "title": "Abayas",
+            "text": "Elegant silhouettes with refined structure for day-to-evening wear."
+          }
+        },
+        "category_hijab": {
+          "type": "category",
+          "settings": {
+            "title": "Hijabs",
+            "text": "Lightweight drape and premium comfort designed for effortless styling."
+          }
+        },
+        "category_occasion": {
+          "type": "category",
+          "settings": {
+            "title": "Occasion Edit",
+            "text": "Polished pieces in understated tones for moments that matter."
+          }
+        }
+      },
+      "block_order": [
+        "category_abaya",
+        "category_hijab",
+        "category_occasion"
+      ],
+      "settings": {
+        "kicker": "Collections",
+        "heading": "Designed with calm, worn with confidence.",
+        "copy": "A clean wardrobe architecture of abayas and hijabs with premium fabrics, soft tones and intentional details."
       }
     },
     "diqa_brand_story_7Wq2Az": {
@@ -285,28 +321,29 @@
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
+        "max_products": 6,
+        "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
+        "columns_gap": 16,
+        "rows_gap": 30,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
-        "gap": 28,
-        "color_scheme": "scheme-6",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "gap": 32,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 32,
+        "padding-block-end": 64
       }
     }
   },
   "order": [
     "diqa_waterfall_hero_A1b9",
-    "diqa_immersive_showcase_r8T2",
-    "product_list_fa6P9H",
     "diqa_brand_story_7Wq2Az",
+    "diqa_collection_intro_home_L9s2",
+    "product_list_fa6P9H",
+    "diqa_immersive_showcase_r8T2",
     "diqa_testimonials_U2asEf"
   ]
 }
