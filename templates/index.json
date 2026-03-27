@@ -28,20 +28,60 @@
     "diqa_waterfall_hero_A1b9": {
       "type": "diqa-waterfall-hero",
       "settings": {
-        "kicker": "Ritual of Elegance",
+        "kicker": "Desert Elegance",
         "title": "Luxury in motion, calm in presence.",
-        "copy": "A refined visual experience inspired by flowing water. Crafted for women who choose quiet confidence.",
+        "copy": "A refined visual experience with warm, elegant energy inspired by Morocco and Dubai. Crafted for women who choose quiet confidence.",
         "primary_label": "Discover Collection",
         "primary_link": "shopify://collections/all",
         "secondary_label": "Explore Story",
         "secondary_link": "/pages/about",
         "panel_kicker": "DIQA Signature",
-        "panel_text": "Premium fabrics, serene tones, and timeless modest silhouettes.",
+        "panel_text": "Premium fabrics, warm sand tones, and timeless modest silhouettes with a Morocco-Dubai touch.",
         "bg_start": "#f9f4eb",
         "bg_end": "#efe5d5",
         "accent": "#a7834e",
         "text_color": "#2b241d"
       }
+    },
+    "diqa_service_strip_pro_a29": {
+      "type": "diqa-service-strip",
+      "blocks": {
+        "service_1": {
+          "type": "service",
+          "settings": {
+            "title": "Fast Shipping",
+            "text": "Shipped in 1-2 business days."
+          }
+        },
+        "service_2": {
+          "type": "service",
+          "settings": {
+            "title": "Easy Returns",
+            "text": "14-day return and exchange support."
+          }
+        },
+        "service_3": {
+          "type": "service",
+          "settings": {
+            "title": "Secure Checkout",
+            "text": "Encrypted and trusted payment flow."
+          }
+        },
+        "service_4": {
+          "type": "service",
+          "settings": {
+            "title": "Premium Quality",
+            "text": "Carefully selected fabrics and finishing."
+          }
+        }
+      },
+      "block_order": [
+        "service_1",
+        "service_2",
+        "service_3",
+        "service_4"
+      ],
+      "settings": {}
     },
     "diqa_collection_intro_home_L9s2": {
       "type": "diqa-collection-intro",
@@ -112,7 +152,7 @@
       "settings": {
         "kicker": "Brand Statement",
         "heading": "Quiet luxury. Strong identity.",
-        "copy": "DIQA is built on balance. Feminine lines. Confident silhouettes. Craftsmanship you feel in every movement."
+        "copy": "DIQA is built on balance. Feminine lines. Confident silhouettes. Craftsmanship with warm, elevated Morocco-Dubai character."
       }
     },
     "diqa_testimonials_U2asEf": {
@@ -340,6 +380,7 @@
   },
   "order": [
     "diqa_waterfall_hero_A1b9",
+    "diqa_service_strip_pro_a29",
     "diqa_brand_story_7Wq2Az",
     "diqa_collection_intro_home_L9s2",
     "product_list_fa6P9H",

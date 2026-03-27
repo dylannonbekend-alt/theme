@@ -1,0 +1,42 @@
+{{ 'diqa-pro-storefront.css' | asset_url | stylesheet_tag }}
+
+<section class="diqa-service-strip">
+  <div class="page-width">
+    <div class="diqa-service-strip__wrap">
+      {% for block in section.blocks %}
+        <article class="diqa-service-strip__item" {{ block.shopify_attributes }}>
+          <p class="diqa-service-strip__title">{{ block.settings.title }}</p>
+          <p class="diqa-service-strip__text">{{ block.settings.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "DIQA Service Strip",
+  "blocks": [
+    {
+      "type": "service",
+      "name": "Service item",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Fast Shipping" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Shipped in 1-2 business days." }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "DIQA Service Strip",
+      "blocks": [
+        { "type": "service", "settings": { "title": "Fast Shipping", "text": "Shipped in 1-2 business days." } },
+        { "type": "service", "settings": { "title": "Easy Returns", "text": "14-day return and exchange support." } },
+        { "type": "service", "settings": { "title": "Secure Checkout", "text": "Encrypted and trusted payment flow." } },
+        { "type": "service", "settings": { "title": "Premium Quality", "text": "Carefully selected fabrics and finishing." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
