@@ -3,9 +3,34 @@
   overflow: hidden;
   padding: 7rem 0 6rem;
   min-height: 78vh;
-  background: radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.75), transparent 36%),
+  background: radial-gradient(circle at 10% 14%, rgba(255, 246, 227, 0.9), transparent 36%),
+    radial-gradient(circle at 88% 12%, rgba(255, 229, 184, 0.48), transparent 30%),
     linear-gradient(160deg, var(--diqa-waterfall-start), var(--diqa-waterfall-end));
   color: var(--diqa-waterfall-text);
+}
+
+.diqa-waterfall::before,
+.diqa-waterfall::after {
+  content: '';
+  position: absolute;
+  left: -8%;
+  right: -8%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.diqa-waterfall::before {
+  bottom: -7rem;
+  height: 15rem;
+  background: linear-gradient(180deg, rgba(193, 146, 77, 0.02), rgba(193, 146, 77, 0.2));
+  clip-path: ellipse(62% 58% at 48% 100%);
+}
+
+.diqa-waterfall::after {
+  bottom: -9.5rem;
+  height: 18rem;
+  background: linear-gradient(180deg, rgba(171, 126, 63, 0.02), rgba(171, 126, 63, 0.22));
+  clip-path: ellipse(54% 56% at 52% 100%);
 }
 
 .diqa-waterfall__canvas,
@@ -17,8 +42,14 @@
 
 .diqa-waterfall__veil {
   background:
-    radial-gradient(circle at 16% 18%, rgba(167, 131, 78, 0.12), transparent 44%),
-    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.45), transparent 35%);
+    radial-gradient(circle at 16% 18%, rgba(167, 131, 78, 0.18), transparent 44%),
+    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.45), transparent 35%),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.11) 0 1px,
+      rgba(255, 255, 255, 0) 1px 16px
+    );
+  opacity: 0.85;
 }
 
 .diqa-waterfall__inner {
@@ -112,8 +143,17 @@
   inset: 0;
   border-radius: 1rem;
   border: 1px solid rgba(164, 136, 92, 0.2);
-  background: linear-gradient(145deg, rgba(255, 253, 248, 0.9), rgba(246, 235, 217, 0.72));
+  background: linear-gradient(145deg, rgba(255, 252, 245, 0.94), rgba(243, 229, 204, 0.8));
   box-shadow: 0 30px 80px rgba(76, 55, 26, 0.16);
+}
+
+.diqa-waterfall__stage::before {
+  content: '';
+  position: absolute;
+  inset: 0.9rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(160, 119, 64, 0.16);
+  pointer-events: none;
 }
 
 .diqa-waterfall__orb {
@@ -202,12 +242,12 @@
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #7f6238;
+  color: #875f26;
 }
 
 .diqa-waterfall__card span {
   font-size: 0.88rem;
-  color: #4f4337;
+  color: #5a4630;
 }
 
 .diqa-waterfall__card--a {
