@@ -358,4 +358,24 @@
   .diqa-waterfall__topic-tabs {
     grid-template-columns: 1fr;
   }
+
+  /* Mobile alignment polish: keep actions + chips centered */
+  .diqa-waterfall__actions {
+    justify-content: center;
+  }
+
+  .diqa-waterfall__actions .button {
+    flex: 1 1 0;
+    text-align: center;
+  }
+
+  .diqa-waterfall__micro {
+    justify-content: center;
+  }
+
+  .diqa-waterfall__panel-line {
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
