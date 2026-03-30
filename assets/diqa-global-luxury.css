@@ -177,6 +177,21 @@ textarea {
   border: 1px solid rgba(164, 136, 92, 0.28);
 }
 
+/* Contact page: make submit button match light luxury */
+main[data-template*='contact'] .contact-form .submit-button,
+main[data-template*='contact'] .contact-form .button.submit-button {
+  background: rgba(255, 250, 242, 0.98);
+  border: 1px solid rgba(164, 136, 92, 0.45) !important;
+  color: #2a2017 !important;
+}
+
+main[data-template*='contact'] .contact-form .submit-button:hover,
+main[data-template*='contact'] .contact-form .button.submit-button:hover {
+  background: rgba(255, 246, 232, 1);
+  border-color: rgba(164, 136, 92, 0.7) !important;
+  color: #1f1811 !important;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #9a8b78;
