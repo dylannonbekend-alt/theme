@@ -337,3 +337,25 @@ main[data-template*='index'] .ui-test-product-list .product-card__content [class
   color: #6a5639;
   font-size: 0.85rem;
 }
+
+/* Mobile header drawer featured products: neat 2-up grid alignment */
+@media screen and (max-width: 749px) {
+  .menu-drawer__featured-content-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    padding-inline: 0 !important;
+  }
+
+  .menu-drawer__featured-content-list-item,
+  .menu-drawer__featured-content-list-item--product {
+    flex: none !important;
+    width: auto !important;
+  }
+
+  .menu-drawer__featured-content-list-item--product .resource-card {
+    height: 100%;
+  }
+}
