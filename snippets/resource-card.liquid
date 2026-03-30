@@ -9,6 +9,7 @@
   @param {string} [image_aspect_ratio] - The aspect ratio to display the image. Defaults to image's natural ratio
   @param {boolean} [image_hover] - Whether to show a secondary image on hover and focus
   @param {string} [image_sizes] - The sizes attribute for responsive images. Defaults to 'auto'
+  @param {boolean} [disable_transition] - Disables view-transition behavior for product cards (useful for header/menus)
 {%- enddoc -%}
 
 {% liquid
@@ -25,7 +26,7 @@
     assign single_thumbnail_collection = true
   endif
 
-  if resource_type == 'product' and settings.transition_to_main_product
+  if resource_type == 'product' and settings.transition_to_main_product and disable_transition != true
     assign featured_media_url = resource.selected_or_first_available_variant.featured_image | image_url: width: image_width
     if featured_media_url == blank
       assign featured_media_url = resource.featured_media.preview_image | image_url: width: image_width
@@ -33,7 +34,7 @@
   endif
 %}
 
-{%- if resource_type == 'product' and settings.transition_to_main_product -%}
+{%- if resource_type == 'product' and settings.transition_to_main_product and disable_transition != true -%}
   <product-card-link
     data-product-id="{{ resource.id }}"
     data-featured-media-url="{{ featured_media_url }}"
@@ -56,7 +57,7 @@
   <div
     class="resource-card__media"
     style="--resource-card-aspect-ratio: {{ ratio }};"
-    {% if resource_type == 'product' and settings.transition_to_main_product %}
+    {% if resource_type == 'product' and settings.transition_to_main_product and disable_transition != true %}
       ref="cardGallery"
       data-view-transition-to-main-product
     {% endif %}
@@ -78,7 +79,7 @@
       {%- if featured_image != blank -%}
         {% liquid
           assign ref_image_to_transition = ''
-          if settings.transition_to_main_product
+          if settings.transition_to_main_product and disable_transition != true
             assign ref_image_to_transition = 'imagesToTransition[]'
           endif
         %}
@@ -156,7 +157,7 @@
     {% endif %}
   </div>
 </div>
-{%- if resource_type == 'product' and settings.transition_to_main_product -%}
+{%- if resource_type == 'product' and settings.transition_to_main_product and disable_transition != true -%}
   </product-card-link>
 {%- endif -%}
 

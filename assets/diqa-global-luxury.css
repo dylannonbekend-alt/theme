@@ -345,17 +345,19 @@ main[data-template*='index'] .ui-test-product-list .product-card__content [class
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 12px !important;
     justify-content: center !important;
-    overflow: visible !important;
+    overflow-x: hidden !important;
     padding-inline: 0 !important;
   }
 
   .menu-drawer__featured-content-list-item,
   .menu-drawer__featured-content-list-item--product {
     flex: none !important;
-    width: auto !important;
+    width: 100% !important;
   }
 
   .menu-drawer__featured-content-list-item--product .resource-card {
-    height: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: hidden;
   }
 }
